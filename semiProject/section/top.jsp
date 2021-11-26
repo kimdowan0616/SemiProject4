@@ -8,7 +8,7 @@
 	content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 <meta name="description" content="" />
 <meta name="author" content="" />
-<title>방꾸미기</title>
+<title>내집내꾸</title>
 <link rel="stylesheet" type="text/css" href="../css/style.css" />
 <script type="text/javascript" src="../js/scripts.js"></script>
 
@@ -39,10 +39,12 @@
 		class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top"
 		id="mainNav">
 		<div class="container">
-
+			<!-- 로고 -->
 			<img src="../images/kakao.png" width="50" height="50"
 				style="margin-right: 20px" alt='로고'> <a class="navbar-brand"
-				href="#page-top">방꾸미기</a>
+				href="#page-top">내집내꾸</a>
+
+			<!-- 모바일버전 우측 메뉴버튼 -->
 			<button
 				class="navbar-toggler text-uppercase font-weight-bold bg-primary text-white rounded"
 				type="button" data-bs-toggle="collapse"
@@ -52,20 +54,21 @@
 			</button>
 
 			<!-- 드롭다운 메뉴 -->
-			<a class="nav-link dropdown-toggle" href="#"
-				id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown"
-				aria-expanded="false"> 카테고리 </a>
-			<ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-				<li><a class="dropdown-item" href="#">가구</a></li>
-				<li><a class="dropdown-item" href="#">패브릭</a></li>
-				<li><a class="dropdown-item" href="#">가전</a></li>
-				<li><a class="dropdown-item" href="#">생활용품</a></li>
-				<li><a class="dropdown-item" href="#">반려동물</a></li>
-			</ul>
-			</li>
-
-			<!-- 일반메뉴 -->
 			<div class="collapse navbar-collapse" id="navbarResponsive">
+				<a class="nav-link dropdown-toggle" href="#"
+					id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown"
+					aria-expanded="false"> 카테고리 </a>
+				<ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink"
+					style="left: 25%; width: 300px">
+					<li><a class="dropdown-item" href="#">가구</a></li>
+					<li><a class="dropdown-item" href="#">패브릭</a></li>
+					<li><a class="dropdown-item" href="#">가전</a></li>
+					<li><a class="dropdown-item" href="#">생활용품</a></li>
+					<li><a class="dropdown-item" href="#">반려동물</a></li>
+				</ul>
+				</li>
+
+				<!-- 일반메뉴 -->
 				<ul class="navbar-nav ms-left">
 					<li class="nav-item mx-0 mx-lg-1"><a
 						class="nav-link py-3 px-0 px-lg-3 rounded" href="#portfolio">스토어</a></li>
@@ -74,26 +77,75 @@
 					<li class="nav-item mx-0 mx-lg-1"><a
 						class="nav-link py-3 px-0 px-lg-3 rounded" href="#contact">커뮤니티</a></li>
 				</ul>
-			</div>
 
-			<!-- 검색바 -->
-			<nav class="navbar navbar-light bg-light">
-				<div class="container-fluid">
-					<form class="d-flex">
-						<input class="form-control me-2" type="search"
-							placeholder="요즘 커뮤니티 트렌드는?" aria-label="Search">
-						<button class="btn btn-outline-success" type="submit">검색</button>
+
+				<!-- 검색바 -->
+				<nav class="navbar navbar-light bg-light">
+					<div class="container-fluid">
+						<form class="d-flex">
+							<input class="form-control me-2" type="search"
+								placeholder="요즘 커뮤니티 트렌드는?" aria-label="Search">
+							<button class="btn btn-outline-success" type="submit">검색</button>
+						</form>
+					</div>
+				</nav>
+
+				<!-- 우측상단 로그인 -->
+				<div class="collapse navbar-collapse" id="navbarResponsive">
+					<ul class="navbar-nav">
+						<li class="nav-item mx-0 mx-lg-1"><a
+							class="nav-link py-3 px-0 px-lg-3 rounded" data-bs-toggle="modal"
+							data-bs-target="#modalSignin">로그인/가입</a></li>
+					</ul>
+				</div>
+			</div>
+	</nav>
+	<!-- 로그인 modal -->
+
+	<div class="modal modal-signin modal fade " tabindex="-1" role="dialog"
+		id="modalSignin" aria-hidden="true" aria-labelledby="modalSignin">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content rounded-5 shadow">
+				<div class="modal-header p-5 pb-4 border-bottom-0">
+					<!-- <h5 class="modal-title">Modal title</h5> -->
+					<h2 class="fw-bold mb-0">내집내꾸 로그인</h2>
+					<button type="button" class="btn-close" data-bs-dismiss="modal"
+						aria-label="Close"></button>
+				</div>
+
+				<div class="modal-body p-5 pt-0">
+					<form class="">
+						<div class="form-floating mb-3">
+							<input type="email" class="form-control rounded-4"
+								id="floatingInput" placeholder="name@example.com"> <label
+								for="floatingInput">Email address</label>
+						</div>
+						<div class="form-floating mb-3">
+							<input type="password" class="form-control rounded-4"
+								id="floatingPassword" placeholder="Password"> <label
+								for="floatingPassword">Password</label>
+						</div>
+						<button class="w-100 mb-2 btn btn-lg rounded-4 btn-primary"
+							type="submit">Sign up</button>
+						<small class="text-muted">By clicking Sign up, you agree
+							to the terms of use.</small>
+						<hr class="my-4">
+						<h2 class="fs-5 fw-bold mb-3">간편 로그인</h2>
+						<button class="w-100 py-2 mb-2 btn btn-outline-dark rounded-4"
+							type="submit">
+							<svg class="bi me-1" width="16" height="16">
+								<img src="../images/kakao.png" width="16" height="16"></svg>
+							Sign up with KaKao
+						</button>
+						<button class="w-100 py-2 mb-2 btn btn-outline-primary rounded-4"
+							type="submit">
+							<svg class="bi me-1" width="16" height="16">
+								<use xlink:href="#facebook" /></svg>
+							Sign up with Facebook
+						</button>
+
 					</form>
 				</div>
-			</nav>
-
-			<!-- 우측상단 로그인 -->
-			<div class="collapse navbar-collapse" id="navbarResponsive">
-				<ul class="navbar-nav">
-					<li class="nav-item mx-0 mx-lg-1"><a
-						class="nav-link py-3 px-0 px-lg-3 rounded" data-bs-toggle="modal"
-						data-bs-target="#modalSignin">로그인/가입</a></li>
-				</ul>
 			</div>
 		</div>
-	</nav>
+	</div>
