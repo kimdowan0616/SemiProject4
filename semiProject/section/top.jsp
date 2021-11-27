@@ -100,8 +100,8 @@
 				</div>
 			</div>
 	</nav>
-	<!-- 로그인 modal -->
 
+	<!-- 로그인 modal -->
 	<div class="modal modal-signin modal fade " tabindex="-1" role="dialog"
 		id="modalSignin" aria-hidden="true" aria-labelledby="modalSignin">
 		<div class="modal-dialog" role="document">
@@ -116,36 +116,187 @@
 				<div class="modal-body p-5 pt-0">
 					<form class="">
 						<div class="form-floating mb-3">
-							<input type="email" class="form-control rounded-4"
+							<input type="text" class="form-control rounded-4"
 								id="floatingInput" placeholder="name@example.com"> <label
-								for="floatingInput">Email address</label>
+								for="floatingInput">아이디</label>
 						</div>
 						<div class="form-floating mb-3">
 							<input type="password" class="form-control rounded-4"
 								id="floatingPassword" placeholder="Password"> <label
-								for="floatingPassword">Password</label>
+								for="floatingPassword">비밀번호</label>
 						</div>
 						<button class="w-100 mb-2 btn btn-lg rounded-4 btn-primary"
-							type="submit">Sign up</button>
-						<small class="text-muted">By clicking Sign up, you agree
-							to the terms of use.</small>
+							type="submit">로그인</button>
+						<small class="text-muted">아이디가 없으세요? 1분이면 가입완료!</small>
+						<button class="w-100 mb-2 btn btn-lg rounded-4 btn-primary"
+							type="button" data-bs-toggle="modal"
+							data-bs-target="#modalSignup">회원가입</button>
 						<hr class="my-4">
 						<h2 class="fs-5 fw-bold mb-3">간편 로그인</h2>
+						<p>현재 간편로그인 준비중입니다</p>
 						<button class="w-100 py-2 mb-2 btn btn-outline-dark rounded-4"
 							type="submit">
-							<svg class="bi me-1" width="16" height="16">
-								<img src="../images/kakao.png" width="16" height="16"></svg>
-							Sign up with KaKao
+							<img src="../images/kakao.png" width="16" height="16"> Sign
+							up with KaKao
 						</button>
-						<button class="w-100 py-2 mb-2 btn btn-outline-primary rounded-4"
+						<button class="w-100 py-2 mb-2 btn btn-outline-dark rounded-4"
 							type="submit">
-							<svg class="bi me-1" width="16" height="16">
-								<use xlink:href="#facebook" /></svg>
+							<img src="../images/facebook.png" width="16" height="16">
 							Sign up with Facebook
+						</button>
+						
+						<hr class="my-3">
+						<h2 class="fs-6 fw-bold mb-3">내집내꾸 판매자가 되고싶으세요?</h2>
+						<button class="w-100 py-2 mb-2 btn btn-outline-dark rounded-4"
+							type="button" data-bs-toggle="modal"
+							data-bs-target="#modalcompanySignup"> 판매자
+							가입하기
 						</button>
 
 					</form>
 				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- 일반 회원가입 modal -->
+	<div class="modal modal-signin modal fade " tabindex="-1" role="dialog"
+		id="modalSignup" aria-hidden="true" aria-labelledby="modalSignup">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content rounded-5 shadow">
+				<div class="modal-header p-3 pb-2 border-bottom-0">
+					<!-- <h5 class="modal-title">Modal title</h5> -->
+					<h3 class="fw-bold mb-0">내집내꾸 회원가입</h3>
+					<button type="button" class="btn-close" data-bs-dismiss="modal"
+						aria-label="Close"></button>
+				</div>
+				<div class="container px-5 my-5">
+    <form id="contactForm" data-sb-form-api-token="API_TOKEN">
+        <div class="form-floating mb-3">
+            <input class="form-control" id="id" type="text" placeholder="id" data-sb-validations="required" />
+            <label for="아이디">아이디</label>
+            <div class="invalid-feedback" data-sb-feedback="id:required">아이디는 필수항목 입니다.</div>
+        </div>
+        <div class="form-floating mb-3">
+            <input class="form-control" id="pwd" type="text" placeholder="pwd" data-sb-validations="required" />
+            <label for="비밀번호">비밀번호</label>
+            <div class="invalid-feedback" data-sb-feedback="pwd:required">비밀번호를 입력해주세요.</div>
+        </div>
+        <div class="form-floating mb-3">
+            <input class="form-control" id="pwdck" type="text" placeholder="pwdck" data-sb-validations="" />
+            <label for="비밀번호확인">비밀번호 확인</label>
+        </div>
+        <div class="form-floating mb-3">
+            <input class="form-control" id="name" type="text" placeholder="name" data-sb-validations="required" />
+            <label for="이름">이름</label>
+            <div class="invalid-feedback" data-sb-feedback="이름:required">이름을 입력해주세요.</div>
+        </div>
+        <div class="form-floating mb-3">
+            <input class="form-control" id="phone" type="text" placeholder="phone" data-sb-validations="required" />
+            <label for="연락처">연락처</label>
+            <div class="invalid-feedback" data-sb-feedback="phone:required">연락처를 입력해주세요.</div>
+        </div>
+        <div class="form-floating mb-3">
+            <input class="form-control" id="post" type="text" placeholder="post" data-sb-validations="required" />
+            <label for="우편번호">우편번호</label>
+            <div class="invalid-feedback" data-sb-feedback="post:required">우편번호가 없습니다.</div>
+        </div>
+        <div class="form-floating mb-3">
+            <input class="form-control" id="address" type="text" placeholder="address" data-sb-validations="required" />
+            <label for="주소">주소</label>
+            <div class="invalid-feedback" data-sb-feedback="address:required">주소를 입력해주세요.</div>
+        </div>
+        <div class="form-floating mb-3">
+            <input class="form-control" id="email" type="email" placeholder="email" data-sb-validations="email" />
+            <label for="이메일">이메일</label>
+            <div class="invalid-feedback" data-sb-feedback="email:email">Exam@gmail.com</div>
+        </div>
+        <div class="d-none" id="submitSuccessMessage">
+            <div class="text-center mb-3">
+                <div class="fw-bolder">Form submission successful!</div>
+                <a href="https://startbootstrap.com/solution/contact-forms">https://startbootstrap.com/solution/contact-forms</a>
+            </div>
+        </div>
+        <div class="d-none" id="submitErrorMessage">
+            <div class="text-center text-danger mb-3">Error sending message!</div>
+        </div>
+        <div class="d-grid">
+            <button class="btn btn-primary btn-lg disabled" id="submitButton" type="submit">Submit</button>
+        </div>
+    </form>
+</div>
+<script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+			</div>
+		</div>
+	</div>
+	
+	<!-- 판매자 가입 modal -->
+	<div class="modal modal-signin modal fade " tabindex="-1" role="dialog"
+		id="modalcompanySignup" aria-hidden="true" aria-labelledby="modalcompanySignup">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content rounded-5 shadow">
+				<div class="modal-header p-3 pb-2 border-bottom-0">
+					<!-- <h5 class="modal-title">Modal title</h5> -->
+					<h3 class="fw-bold mb-0">판매자 회원가입</h3>
+					<button type="button" class="btn-close" data-bs-dismiss="modal"
+						aria-label="Close"></button>
+				</div>
+				<div class="container px-5 my-5">
+    <form id="contactForm" data-sb-form-api-token="API_TOKEN">
+        <div class="form-floating mb-3">
+            <input class="form-control" id="id" type="text" placeholder="id" data-sb-validations="required" />
+            <label for="아이디">아이디</label>
+            <div class="invalid-feedback" data-sb-feedback="id:required">아이디는 필수항목 입니다.</div>
+        </div>
+        <div class="form-floating mb-3">
+            <input class="form-control" id="pwd" type="text" placeholder="pwd" data-sb-validations="required" />
+            <label for="비밀번호">비밀번호</label>
+            <div class="invalid-feedback" data-sb-feedback="pwd:required">비밀번호를 입력해주세요.</div>
+        </div>
+        <div class="form-floating mb-3">
+            <input class="form-control" id="pwdck" type="text" placeholder="pwdck" data-sb-validations="" />
+            <label for="비밀번호확인">비밀번호 확인</label>
+        </div>
+        <div class="form-floating mb-3">
+            <input class="form-control" id="name" type="text" placeholder="name" data-sb-validations="required" />
+            <label for="이름">이름</label>
+            <div class="invalid-feedback" data-sb-feedback="이름:required">이름을 입력해주세요.</div>
+        </div>
+        <div class="form-floating mb-3">
+            <input class="form-control" id="phone" type="text" placeholder="phone" data-sb-validations="required" />
+            <label for="연락처">연락처</label>
+            <div class="invalid-feedback" data-sb-feedback="phone:required">연락처를 입력해주세요.</div>
+        </div>
+        <div class="form-floating mb-3">
+            <input class="form-control" id="post" type="text" placeholder="post" data-sb-validations="required" />
+            <label for="우편번호">우편번호</label>
+            <div class="invalid-feedback" data-sb-feedback="post:required">우편번호가 없습니다.</div>
+        </div>
+        <div class="form-floating mb-3">
+            <input class="form-control" id="address" type="text" placeholder="address" data-sb-validations="required" />
+            <label for="주소">주소</label>
+            <div class="invalid-feedback" data-sb-feedback="address:required">주소를 입력해주세요.</div>
+        </div>
+        <div class="form-floating mb-3">
+            <input class="form-control" id="email" type="email" placeholder="email" data-sb-validations="email" />
+            <label for="이메일">이메일</label>
+            <div class="invalid-feedback" data-sb-feedback="email:email">Exam@gmail.com</div>
+        </div>
+        <div class="d-none" id="submitSuccessMessage">
+            <div class="text-center mb-3">
+                <div class="fw-bolder">Form submission successful!</div>
+                <a href="https://startbootstrap.com/solution/contact-forms">https://startbootstrap.com/solution/contact-forms</a>
+            </div>
+        </div>
+        <div class="d-none" id="submitErrorMessage">
+            <div class="text-center text-danger mb-3">Error sending message!</div>
+        </div>
+        <div class="d-grid">
+            <button class="btn btn-primary btn-lg disabled" id="submitButton" type="submit">Submit</button>
+        </div>
+    </form>
+</div>
+<script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
 			</div>
 		</div>
 	</div>

@@ -2664,7 +2664,7 @@ textarea.form-control-lg {
 }
 .form-floating > .form-control,
 .form-floating > .form-select {
-  height: 5.5rem;
+  height: 4.7rem;
   line-height: 1.25;
 }
 .form-floating > label {
@@ -11417,7 +11417,7 @@ html {
 }
 .form-floating input.form-control,
 .form-floating textarea.form-control {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   border-left: 0;
   border-right: 0;
   border-top: 0;
@@ -11429,7 +11429,7 @@ html {
   box-shadow: none;
 }
 .form-floating label {
-  font-size: 1.5rem;
+  font-size: 1rem;
   color: #6c757d;
 }
 
