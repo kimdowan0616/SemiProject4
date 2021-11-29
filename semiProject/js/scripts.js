@@ -6,7 +6,6 @@
 //
 // Scripts
 // 
-
 window.addEventListener('DOMContentLoaded', event => {
 
     // Navbar shrink function
@@ -50,5 +49,30 @@ window.addEventListener('DOMContentLoaded', event => {
             }
         });
     });
+	
+
+
+	const slickSlide = jQuery('#slick-slide')
+	
+	if(slickSlide){
+		slickSlide.slick({
+			dots: true,
+			arrows: false,
+			slidesToShow:4,
+			slideToScroll:1,
+			autoplay:true,
+			autoplaySpeed:2000,
+			responsive:[
+				{
+					breakpoint: 768,
+					settings:{slidesToShow:2}
+				},
+				{
+					breakpoint:576,
+					settings:{slidesToShow:1}
+				}
+			]
+		})
+	}
 
 });

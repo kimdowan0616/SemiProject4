@@ -2,7 +2,6 @@
 	pageEncoding="UTF-8"%>
 
 <%@include file="top.jsp"%>
-
 <article>
 	<header class="masthead bg-primary text-white text-center">
 		<!-- 슬라이드 배너 -->
@@ -238,11 +237,8 @@
 													src="../images/mood2.jpg" alt="..." />
 												<!-- Portfolio Modal - Text-->
 												<p class="mb-4">Lorem ipsum dolor sit amet, consectetur
-													adipisicing elit. Mollitia neque assumenda ipsam nihil,
-													molestias magnam, recusandae quos quis inventore quisquam
-													velit asperiores, vitae? Reprehenderit soluta, eos quod
-													consequuntur itaque. Nam.</p>
-												<button class="btn btn-primary" href="#!"
+													adipisicing elit. Mollitia neque assumenda</p>
+												<button class="btn btn-primary" href="#"
 													data-bs-dismiss="modal">
 													<i class="fas fa-times fa-fw"></i> Close Window
 												</button>
@@ -283,11 +279,8 @@
 													src="../images/clean2.jpg" alt="..." />
 												<!-- Portfolio Modal - Text-->
 												<p class="mb-4">Lorem ipsum dolor sit amet, consectetur
-													adipisicing elit. Mollitia neque assumenda ipsam nihil,
-													molestias magnam, recusandae quos quis inventore quisquam
-													velit asperiores, vitae? Reprehenderit soluta, eos quod
-													consequuntur itaque. Nam.</p>
-												<button class="btn btn-primary" href="#!"
+													adipisicing elit. Mollitia neque assumenda</p>
+												<button class="btn btn-primary" href="#"
 													data-bs-dismiss="modal">
 													<i class="fas fa-times fa-fw"></i> Close Window
 												</button>
@@ -328,11 +321,8 @@
 													src="../images/minibed2.jpg" alt="..." />
 												<!-- Portfolio Modal - Text-->
 												<p class="mb-4">Lorem ipsum dolor sit amet, consectetur
-													adipisicing elit. Mollitia neque assumenda ipsam nihil,
-													molestias magnam, recusandae quos quis inventore quisquam
-													velit asperiores, vitae? Reprehenderit soluta, eos quod
-													consequuntur itaque. Nam.</p>
-												<button class="btn btn-primary" href="#!"
+													adipisicing elit. Mollitia neque assumenda ipsam nihil</p>
+												<button class="btn btn-primary" href="#"
 													data-bs-dismiss="modal">
 													<i class="fas fa-times fa-fw"></i> Close Window
 												</button>
@@ -372,12 +362,9 @@
 												<img class="img-fluid rounded mb-5" src="../images/bed2.jpg"
 													alt="..." />
 												<!-- Portfolio Modal - Text-->
-												<p class="mb-4">Lorem ipsum dolor sit amet, consectetur
-													adipisicing elit. Mollitia neque assumenda ipsam nihil,
-													molestias magnam, recusandae quos quis inventore quisquam
-													velit asperiores, vitae? Reprehenderit soluta, eos quod
-													consequuntur itaque. Nam.</p>
-												<button class="btn btn-primary" href="#!"
+												<p class="mb-4">Lorem ipsum dolor sit amet, consectetur	adipisicing elit. Mollitia neque assumenda ipsam nihil,
+													molestias magnam, recusandae quos quis inventore quisquam</p>
+												<button class="btn btn-primary" href="#"
 													data-bs-dismiss="modal">
 													<i class="fas fa-times fa-fw"></i> Close Window
 												</button>
@@ -388,9 +375,10 @@
 							</div>
 						</div>
 					</div>
-					<!-- 테스트 그리드 모달 끝-->
 				</div>
+				<!-- 테스트 그리드 모달 끝-->
 			</div>
+		</div>
 	</section>
 
 	<!-- About Section-->
@@ -474,31 +462,74 @@
 			</div>
 		</div>
 	</section>
-	
-	<!-- Contact Section-->
-	<section class="page-section bg-transparent" id="contact">
-		<div class="container">
-			<!-- Contact Section Heading-->
-			<h2
-				class="page-section-heading text-center text-uppercase text-secondary mb-0">커뮤니티</h2>
-			<!-- Icon Divider-->
-			<div class="divider-custom">
-				<div class="divider-custom-line"></div>
-				<div class="divider-custom-icon">
-					<i class="fas fa-star"></i>
+
+	<!-- 커뮤니티 롤링 Section-->
+	<section class="page-section bg-transparent" id="services">
+		<div class="section-content">
+			<div class="container services">
+				<div class="services-header text-center mb-5">
+					<h1 class="display-5">커뮤니티 롤링 Section</h1>
+					<div class="divider"></div>
+					<p class="lead text-secondary">qweweqwhjekjqwhek</p>
 				</div>
-				<div class="divider-custom-line"></div>
-			</div>
-			<!-- 커뮤니티 더보기-->
-			<div class="text-center mt-4">
-				<a class="btn btn-xl btn-outline-light" href=""> 컨텐츠 더보기 </a>
+				<div id="slick-slide" class="services-body">
+					<div class="services-col mx-2 my-3">
+						<a href="#"> <img src="../assets/img/portfolio/cabin.png"
+							alt="" class="card-img-top">
+						</a>
+						<div class="card-body">
+							<h4 class="card-title">slide title</h4>
+							<p class="card-text fw-light mb-4">qweqweqweqwewqe</p>
+							<a href="#" class="btn btn-primary">더보기..</a>
+						</div>
+					</div>
+					<div class="services-col mx-2 my-3">
+						<a href="#"> <img src="../assets/img/portfolio/cake.png"
+							alt="" class="card-img-top">
+						</a>
+						<div class="card-body">
+							<h4 class="card-title">slide title</h4>
+							<p class="card-text fw-light mb-4">qweqweqweqwewqe</p>
+							<a href="#" class="btn btn-primary">더보기..</a>
+						</div>
+					</div>
+					<div class="services-col mx-2 my-3">
+						<a href="#"> <img src="../assets/img/portfolio/circus.png"
+							alt="" class="card-img-top">
+						</a>
+						<div class="card-body">
+							<h4 class="card-title">slide title</h4>
+							<p class="card-text fw-light mb-4">qweqweqweqwewqe</p>
+							<a href="#" class="btn btn-primary">더보기..</a>
+						</div>
+					</div>
+					<div class="services-col mx-2 my-3">
+						<a href="#"> <img src="../assets/img/portfolio/game.png"
+							alt="" class="card-img-top">
+						</a>
+						<div class="card-body">
+							<h4 class="card-title">slide title</h4>
+							<p class="card-text fw-light mb-4">qweqweqweqwewqe</p>
+							<a href="#" class="btn btn-primary">더보기..</a>
+						</div>
+					</div>
+					<div class="services-col mx-2 my-3">
+						<a href="#"> <img src="../assets/img/portfolio/submarine.png"
+							alt="" class="card-img-top">
+						</a>
+						<div class="card-body">
+							<h4 class="card-title">slide title</h4>
+							<p class="card-text fw-light mb-4">qweqweqweqwewqe</p>
+							<a href="#" class="btn btn-primary">더보기..</a>
+						</div>
+					</div>
+
+				</div>
 			</div>
 		</div>
 	</section>
-
 </article>
 
 
-
-
 <%@include file="footer.jsp"%>
+
