@@ -37,7 +37,7 @@
 	<!-- Copyright Section-->
 	<div class="copyright py-4 text-center text-white">
 		<div class="container">
-			<small>Copyright &copy; MyHome Website 2021</small>
+			<small>Copyright &copy; MyHome Website 2021 DOWANTest</small>
 		</div>
 	</div>
 	<!-- Bootstrap core JS-->
