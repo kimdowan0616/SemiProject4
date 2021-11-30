@@ -4,7 +4,7 @@
 <%@include file="top.jsp"%>
 <article>
 	<header class="masthead bg-primary text-white text-center">
-		<!-- 슬라이드 배너 -->
+		<!-- 슬라이드 배너 !! -->
 		<div id="carouselExampleDark" class="carousel carousel-dark slide"
 			data-bs-ride="carousel">
 			<div class="carousel-indicators">
