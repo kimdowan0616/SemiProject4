@@ -70,7 +70,6 @@ pageEncoding="UTF-8"%>
 				</div>
 				<div class="divider-custom-line"></div>
 			</div>
-
 			테스트 그리드
 			<!-- 테스트 그리드 -->
 			<div class="row justify-content-center">
@@ -454,37 +453,37 @@ pageEncoding="UTF-8"%>
 				<div class="services-header text-center mb-5">
 					<h1 class="display-5">커뮤니티 롤링 Section</h1>
 					<div class="divider"></div>
-					<p class="lead text-secondary">qweweqwhjekjqwhek</p>
+					<p class="lead text-secondary">qweweqwhjekjqwhㅈㅈㅈㅈㅈㅈㅈㅈㅈㅈㅈㅈㅈㅈㅈㅈㅈㅈㅈㅈㅈㅈㅈㅈㅈㅈㅈㅈㅈㅈㅈㅈㅈㅈㅈㅈㅈㅈㅈㅈek</p>
 				</div>
 				<div id="slick-slide" class="services-body">
 					<div class="services-col mx-2 my-3">
-						<a href="#"> <img src="../assets/img/portfolio/cabin.png"
+						<a href=""> <img src="../assets/img/portfolio/cabin.png"
 							alt="" class="card-img-top">
 						</a>
 						<div class="card-body">
 							<h4 class="card-title">slide title</h4>
-							<p class="card-text fw-light mb-4">qweqweqweqwewqe</p>
+							<p class="card-text fw-light mb-4">qweqweqweㅂㅈㄷㅈㅂㄷㅈㄷㅂㄷㅂㅈㄷㅂㅈㄷㅂㅈㄷㅂㅈㄷㅂㅈㄷㅂㅁㄴㅇqwewqe</p>
 							<a href="#" class="btn btn-primary">더보기..</a>
 						</div>
 					</div>
 					<div class="services-col mx-2 my-3">
-						<a href="#"> <img src="../assets/img/portfolio/cake.png"
+						<a href=""> <img src="../assets/img/portfolio/cake.png"
 							alt="" class="card-img-top">
 						</a>
 						<div class="card-body">
 							<h4 class="card-title">slide title</h4>
 							<p class="card-text fw-light mb-4">qweqweqweqwewqe</p>
-							<a href="#" class="btn btn-primary">더보기..</a>
+							<a href="" class="btn btn-primary">더보기..</a>
 						</div>
 					</div>
 					<div class="services-col mx-2 my-3">
-						<a href="#"> <img src="../assets/img/portfolio/circus.png"
+						<a href=""> <img src="../assets/img/portfolio/circus.png"
 							alt="" class="card-img-top">
 						</a>
 						<div class="card-body">
 							<h4 class="card-title">slide title</h4>
 							<p class="card-text fw-light mb-4">qweqweqweqwewqe</p>
-							<a href="#" class="btn btn-primary">더보기..</a>
+							<a href="" class="btn btn-primary">더보기..</a>
 						</div>
 					</div>
 					<div class="services-col mx-2 my-3">
@@ -494,17 +493,17 @@ pageEncoding="UTF-8"%>
 						<div class="card-body">
 							<h4 class="card-title">slide title</h4>
 							<p class="card-text fw-light mb-4">qweqweqweqwewqe</p>
-							<a href="#" class="btn btn-primary">더보기..</a>
+							<a href="" class="btn btn-primary">더보기..</a>
 						</div>
 					</div>
 					<div class="services-col mx-2 my-3">
-						<a href="#"> <img src="../assets/img/portfolio/submarine.png"
+						<a href=""> <img src="../assets/img/portfolio/submarine.png"
 							alt="" class="card-img-top">
 						</a>
 						<div class="card-body">
 							<h4 class="card-title">slide title</h4>
 							<p class="card-text fw-light mb-4">qweqweqweqwewqe</p>
-							<a href="#" class="btn btn-primary">더보기..</a>
+							<a href="" class="btn btn-primary">더보기..</a>
 						</div>
 					</div>
 				</div>
