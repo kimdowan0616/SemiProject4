@@ -1,10 +1,10 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
-	pageEncoding="UTF-8"%>
+pageEncoding="UTF-8"%>
 
 <%@include file="top.jsp"%>
 <article>
 	<header class="masthead bg-primary text-white text-center">
-		<!-- 슬라이드 배너 -->
+		<!-- 슬라이드 배너 !! -->
 		<div id="carouselExampleDark" class="carousel carousel-dark slide"
 			data-bs-ride="carousel">
 			<div class="carousel-indicators">
@@ -60,8 +60,7 @@
 	<section class="page-section portfolio" id="portfolio">
 		<div class="container">
 			<!-- Portfolio Section Heading-->
-			<h2
-				class="page-section-heading text-center text-uppercase text-secondary mb-0">내집내꾸
+			<h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">내집내꾸
 				베스트</h2>
 			<!-- Icon Divider-->
 			<div class="divider-custom">
@@ -80,10 +79,8 @@
 					<div class="portfolio-item mx-auto" data-bs-toggle="modal"
 						data-bs-target="#modaltest1">
 						aaa
-						<div
-							class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-							<div
-								class="portfolio-item-caption-content text-center text-white">
+						<div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+							<div class="portfolio-item-caption-content text-center text-white">
 								<i class="fas fa-plus fa-3x"></i>
 							</div>
 						</div>
@@ -96,10 +93,8 @@
 					<div class="portfolio-item mx-auto" data-bs-toggle="modal"
 						data-bs-target="#modaltest2">
 						aaa
-						<div
-							class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-							<div
-								class="portfolio-item-caption-content text-center text-white">
+						<div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+							<div class="portfolio-item-caption-content text-center text-white">
 								<i class="fas fa-plus fa-3x"></i>
 							</div>
 						</div>
@@ -112,14 +107,14 @@
 					<div class="portfolio-item mx-auto" data-bs-toggle="modal"
 						data-bs-target="#modaltest3">
 						aaa
-						<div
-							class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-							<div
-								class="portfolio-item-caption-content text-center text-white">
+						<div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+							<div class="portfolio-item-caption-content text-center text-white">
 								<i class="fas fa-plus fa-3x"></i>
 							</div>
 						</div>
-						bbb <img class="img-fluid" src="../images/minibed1.jpg" alt="..." />ccc
+						bbb
+						<img class="img-fluid" src="../images/minibed1.jpg" alt="..." />
+						ccc
 					</div>
 					3
 				</div>
@@ -128,10 +123,8 @@
 					<div class="portfolio-item mx-auto" data-bs-toggle="modal"
 						data-bs-target="#modaltest4">
 						aaa
-						<div
-							class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-							<div
-								class="portfolio-item-caption-content text-center text-white">
+						<div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+							<div class="portfolio-item-caption-content text-center text-white">
 								<i class="fas fa-plus fa-3x"></i>
 							</div>
 						</div>
@@ -147,10 +140,8 @@
 						<div class="portfolio-item mx-auto" data-bs-toggle="modal"
 							data-bs-target="#modaltest1">
 							aaa
-							<div
-								class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-								<div
-									class="portfolio-item-caption-content text-center text-white">
+							<div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+								<div class="portfolio-item-caption-content text-center text-white">
 									<i class="fas fa-plus fa-3x"></i>
 								</div>
 							</div>
@@ -163,10 +154,8 @@
 						<div class="portfolio-item mx-auto" data-bs-toggle="modal"
 							data-bs-target="#modaltest2">
 							aaa
-							<div
-								class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-								<div
-									class="portfolio-item-caption-content text-center text-white">
+							<div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+								<div class="portfolio-item-caption-content text-center text-white">
 									<i class="fas fa-plus fa-3x"></i>
 								</div>
 							</div>
@@ -181,8 +170,7 @@
 							aaa
 							<div
 								class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-								<div
-									class="portfolio-item-caption-content text-center text-white">
+								<div class="portfolio-item-caption-content text-center text-white">
 									<i class="fas fa-plus fa-3x"></i>
 								</div>
 							</div>
@@ -195,10 +183,8 @@
 						<div class="portfolio-item mx-auto" data-bs-toggle="modal"
 							data-bs-target="#modaltest4">
 							aaa
-							<div
-								class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-								<div
-									class="portfolio-item-caption-content text-center text-white">
+							<div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+								<div class="portfolio-item-caption-content text-center text-white">
 									<i class="fas fa-plus fa-3x"></i>
 								</div>
 							</div>
@@ -221,8 +207,7 @@
 										<div class="row justify-content-center">
 											<div class="col-lg-8">
 												<!-- Portfolio Modal - Title-->
-												<h2
-													class="portfolio-modal-title text-secondary text-uppercase mb-0">Log
+												<h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Log
 													Cabin</h2>
 												<!-- Icon Divider-->
 												<div class="divider-custom">
@@ -414,14 +399,13 @@
 				</div>
 				<div class="col-md-3 col-lg-3 mb-5 mb-md-0">
 					<div class="contentsthumbnail">
-						<img src="../images/instar.png" alt="..."
-							style="width: 242px; height: 200px">
+						<img src="../images/instar.png" alt=".." style="width: 242px; height: 200px">
 						<div class="caption">
 							<h3>Thumbnail label</h3>
 							<p>...</p>
 							<p>
-								<a href="#" class="btn btn-primary" role="button">Button</a> <a
-									href="#" class="btn btn-default" role="button">Button</a>
+								<a href="#" class="btn btn-primary" role="button">Button</a>
+								<a href="#" class="btn btn-default" role="button">Button</a>
 							</p>
 						</div>
 					</div>
@@ -434,8 +418,8 @@
 							<h3>Thumbnail label</h3>
 							<p>...</p>
 							<p>
-								<a href="#" class="btn btn-primary" role="button">Button</a> <a
-									href="#" class="btn btn-default" role="button">Button</a>
+								<a href="#" class="btn btn-primary" role="button">Button</a>
+								<a href="#" class="btn btn-default" role="button">Button</a>
 							</p>
 						</div>
 					</div>
@@ -448,8 +432,8 @@
 							<h3>Thumbnail label</h3>
 							<p>...</p>
 							<p>
-								<a href="#" class="btn btn-primary" role="button">Button</a> <a
-									href="#" class="btn btn-default" role="button">Button</a>
+								<a href="#" class="btn btn-primary" role="button">Button</a>
+								<a href="#" class="btn btn-default" role="button">Button</a>
 							</p>
 						</div>
 					</div>
@@ -523,13 +507,10 @@
 							<a href="#" class="btn btn-primary">더보기..</a>
 						</div>
 					</div>
-
 				</div>
 			</div>
 		</div>
 	</section>
 </article>
 
-
 <%@include file="footer.jsp"%>
-

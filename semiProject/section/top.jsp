@@ -4,7 +4,8 @@
 <html lang="ko">
 <head>
 <meta charset="utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+<meta name="viewport"
+	content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 <meta name="description" content="" />
 <meta name="author" content="" />
 <title>내집내꾸</title>
@@ -14,10 +15,14 @@
 <!-- Favicon-->
 <link rel="icon" type="image/x-icon" href="../assets/favicon.ico" />
 <!-- Font Awesome icons (free version)-->
-<script src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" crossorigin="anonymous"></script>
+<script src="https://use.fontawesome.com/releases/v5.15.4/js/all.js"
+	crossorigin="anonymous"></script>
 <!-- Google fonts-->
-<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700"	rel="stylesheet" type="text/css" />
-<link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
+<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700"
+	rel="stylesheet" type="text/css" />
+<link
+	href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic"
+	rel="stylesheet" type="text/css" />
 <!-- Core theme CSS (includes Bootstrap)-->
 <link href="../css/styles.css" rel="stylesheet" />
 </head>
@@ -25,12 +30,13 @@
 
 	<!-- Navigation-->
 	<nav
-		class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top" id="mainNav">
+		class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top"
+		id="mainNav">
 		<div class="container">
 			<!-- 로고 -->
 			<img src="../images/kakao.png" width="50" height="50"
-				style="margin-right: 20px" alt='로고'> 
-				<a class="navbar-brand"	href="#page-top">내집내꾸</a>
+				style="margin-right: 20px" alt='로고'> <a class="navbar-brand"
+				href="#page-top">내집내꾸</a>
 
 			<!-- 모바일버전 우측 메뉴버튼 -->
 			<button
@@ -111,7 +117,7 @@
 						</div>
 						<button class="w-100 mb-2 btn btn-lg rounded-4 btn-primary"
 							type="submit">로그인</button>
-						<small class="text-muted">아이디가 없으세요? 1분이면 가입완료!</small>
+						<small class="text-muted">아이디가 없으세요? 1분이면 가입완료!<br></small>
 						<button class="w-100 mb-2 btn btn-lg rounded-4 btn-primary"
 							type="button" data-bs-toggle="modal"
 							data-bs-target="#modalSignup">회원가입</button>
@@ -133,7 +139,6 @@
 						<button class="w-100 py-2 mb-2 btn btn-outline-dark rounded-4"
 							type="button" data-bs-toggle="modal"
 							data-bs-target="#modalcompanySignup">판매자 가입하기</button>
-
 					</form>
 				</div>
 			</div>
@@ -155,9 +160,13 @@
 					<form id="contactForm" data-sb-form-api-token="API_TOKEN">
 						<div class="form-floating mb-3">
 							<input class="form-control" id="id" type="text" placeholder="id"
-								data-sb-validations="required" /> <label for="아이디">아이디</label>
-							<div class="invalid-feedback" data-sb-feedback="id:required">아이디는
-								필수항목 입니다.</div>
+								data-sb-validations="required"
+								style="width: 70%; position: absolute;" /> <label for="아이디"
+								style="width: 70%; position: inherit">아이디</label>
+							<button class="btn btn-primary btn-md" style="position: inherit">ID중복확인
+							</button>
+							<div class="invalid-feedback" data-sb-feedback="id:required"
+								style="width: 50%">아이디는 필수항목 입니다.</div>
 						</div>
 						<div class="form-floating mb-3">
 							<input class="form-control" id="pwd" type="text"
@@ -175,7 +184,7 @@
 							<input class="form-control" id="name" type="text"
 								placeholder="name" data-sb-validations="required" /> <label
 								for="이름">이름</label>
-							<div class="invalid-feedback" data-sb-feedback="이름:required">이름을
+							<div class="invalid-feedback" data-sb-feedback="name:required">이름을
 								입력해주세요.</div>
 						</div>
 						<div class="form-floating mb-3">
@@ -187,16 +196,19 @@
 						</div>
 						<div class="form-floating mb-3">
 							<input class="form-control" id="post" type="text"
-								placeholder="post" data-sb-validations="required" /> <label
-								for="우편번호">우편번호</label>
-							<div class="invalid-feedback" data-sb-feedback="post:required">우편번호가
-								없습니다.</div>
+								placeholder="post" data-sb-validations="required"
+								style="width: 75%; position: absolute" /> <label for="우편번호"
+								style="width: 75%; position: inherit">우편번호</label>
+							<button class="btn btn-primary btn-md" style="position: inherit">주소찾기
+							</button>
+							<div class="invalid-feedback" data-sb-feedback="post:required"
+								style="width: 55%">주소찾기를 해주세요.</div>
 						</div>
 						<div class="form-floating mb-3">
 							<input class="form-control" id="address" type="text"
 								placeholder="address" data-sb-validations="required" /> <label
 								for="주소">주소</label>
-							<div class="invalid-feedback" data-sb-feedback="address:required">주소를
+							<div class="invalid-feedback" data-sb-feedback="address:required">상세주소를
 								입력해주세요.</div>
 						</div>
 						<div class="form-floating mb-3">
@@ -204,21 +216,20 @@
 								placeholder="email" data-sb-validations="email" /> <label
 								for="이메일">이메일</label>
 							<div class="invalid-feedback" data-sb-feedback="email:email">이메일
-								형식이 맞지않습니다. Exam@gmail.com</div>
+								형식이 맞지않습니다. (Exam@gmail.com)</div>
 						</div>
 						<div class="d-none" id="submitSuccessMessage">
 							<div class="text-center mb-3">
 								<div class="fw-bolder">Form submission successful!</div>
-								<a href="https://startbootstrap.com/solution/contact-forms">https://startbootstrap.com/solution/contact-forms</a>
 							</div>
-						</div>
-						<div class="d-none" id="submitErrorMessage">
-							<div class="text-center text-danger mb-3">Error sending
-								message!</div>
-						</div>
-						<div class="d-grid">
-							<button class="btn btn-primary btn-lg disabled" id="submitButton"
-								type="submit">Submit</button>
+							<div class="d-none" id="submitErrorMessage">
+								<div class="text-center text-danger mb-3">Error sending
+									message!</div>
+							</div>
+							<div class="d-grid">
+								<button class="btn btn-primary btn-lg disabled"
+									id="submitButton" type="submit">Submit</button>
+							</div>
 						</div>
 					</form>
 				</div>
