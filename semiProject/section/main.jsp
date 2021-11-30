@@ -451,7 +451,7 @@ pageEncoding="UTF-8"%>
 		<div class="section-content">
 			<div class="container services">
 				<div class="services-header text-center mb-5">
-					<h1 class="display-5">커뮤니티 롤링 Section</h1>
+					<h1 class="display-5">커뮤니티</h1>
 					<div class="divider"></div>
 					<p class="lead text-secondary">qweweqwhjekjqwhㅈㅈㅈㅈㅈㅈㅈㅈㅈㅈㅈㅈㅈㅈㅈㅈㅈㅈㅈㅈㅈㅈㅈㅈㅈㅈㅈㅈㅈㅈㅈㅈㅈㅈㅈㅈㅈㅈㅈㅈek</p>
 				</div>
