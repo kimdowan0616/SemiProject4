@@ -441,7 +441,7 @@ pageEncoding="UTF-8"%>
 
 			<!-- 컨텐츠 더보기-->
 			<div class="text-center mt-4">
-				<a class="btn btn-xl btn-outline-light" href=""> 컨텐츠 더보기 </a>
+				<a class="btn btn-xl btn-outline-light" href="../page/list.jsp"> 컨텐츠 더보기 </a>
 			</div>
 		</div>
 	</section>
@@ -453,7 +453,7 @@ pageEncoding="UTF-8"%>
 				<div class="services-header text-center mb-5">
 					<h1 class="display-5">커뮤니티</h1>
 					<div class="divider"></div>
-					<p class="lead text-secondary">qweweqwhjekjqwhㅈㅈㅈㅈㅈㅈㅈㅈㅈㅈㅈㅈㅈㅈㅈㅈㅈㅈㅈㅈㅈㅈㅈㅈㅈㅈㅈㅈㅈㅈㅈㅈㅈㅈㅈㅈㅈㅈㅈㅈek</p>
+					<p class="lead text-secondary">실시간 인테리어 피드 </p>
 				</div>
 				<div id="slick-slide" class="services-body">
 					<div class="services-col mx-2 my-3">
@@ -462,7 +462,7 @@ pageEncoding="UTF-8"%>
 						</a>
 						<div class="card-body">
 							<h4 class="card-title">slide title</h4>
-							<p class="card-text fw-light mb-4">qweqweqweㅂㅈㄷㅈㅂㄷㅈㄷㅂㄷㅂㅈㄷㅂㅈㄷㅂㅈㄷㅂㅈㄷㅂㅈㄷㅂㅁㄴㅇqwewqe</p>
+							<p class="card-text fw-light mb-4">ㅁㄴㄴㅁㅇㅁㄴㅇㅁㄴㅇㅁㄴㅇㄴㅁㅇㄴㅁㅇㅁㄴㅇㅁㄴㅇ</p>
 							<a href="#" class="btn btn-primary">더보기..</a>
 						</div>
 					</div>

@@ -1,5 +1,12 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8"
-	pageEncoding="UTF-8"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+	
+<%
+	String t_userid=(String)session.getAttribute("userid");
+	boolean t_isLogin=false;
+	if(t_userid!=null && !t_userid.isEmpty()){
+		t_isLogin=true; //세션에 값이 있으면 로그인된 상태
+	}
+%>
 <!DOCTYPE html>
 <html lang="ko">
 <head>
@@ -29,14 +36,13 @@
 <body id="page-top">
 
 	<!-- Navigation-->
-	<nav
-		class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top"
+	<nav class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top"
 		id="mainNav">
 		<div class="container">
 			<!-- 로고 -->
 			<img src="../images/kakao.png" width="50" height="50"
 				style="margin-right: 20px" alt='로고'> <a class="navbar-brand"
-				href="#page-top">내집내꾸</a>
+				href="../section/main.jsp">내집내꾸</a>
 
 			<!-- 모바일버전 우측 메뉴버튼 -->
 			<button
@@ -63,28 +69,44 @@
 
 				<!-- 일반메뉴 -->
 				<ul class="navbar-nav ms-left">
-					<li class="nav-item mx-0 mx-lg-1"><a
-						class="nav-link py-3 px-0 px-lg-3 rounded" href="#portfolio">스토어</a></li>
-					<li class="nav-item mx-0 mx-lg-1"><a
-						class="nav-link py-3 px-0 px-lg-3 rounded" href="#about">컨텐츠</a></li>
-					<li class="nav-item mx-0 mx-lg-1"><a
-						class="nav-link py-3 px-0 px-lg-3 rounded" href="#services">커뮤니티</a></li>
-					<li class="nav-item mx-0 mx-lg-1"><a
-						class="nav-link py-3 px-0 px-lg-3 rounded">
+					<li class="nav-item mx-0 mx-lg-1">
+					<a class="nav-link py-3 px-0 px-lg-3 rounded" href="#portfolio">스토어</a></li>
+					<li class="nav-item mx-0 mx-lg-1">
+					<a class="nav-link py-3 px-0 px-lg-3 rounded" href="#about">컨텐츠</a></li>
+					<li class="nav-item mx-0 mx-lg-1">
+					<a class="nav-link py-3 px-0 px-lg-3 rounded" href="#services">커뮤니티</a></li>
+					<li class="nav-item mx-0 mx-lg-1">
+						<a class="nav-link py-3 px-0 px-lg-3 rounded">
 							<form class="d-flex">
 								<input class="form-control me-2" type="search"
 									placeholder="요즘 커뮤니티 트렌드는?" aria-label="Search">
 								<button class="btn btn-outline-success" type="submit">검색</button>
 							</form>
-					</a></li>
+						</a>
+					</li>
 				</ul>
 
-				<!-- 우측상단 로그인 -->
+				<!-- 우측상단 메뉴(검색창 우측) -->
 				<div class="collapse navbar-collapse" id="navbarResponsive">
-					<ul class="navbar-nav">
-						<li class="nav-item mx-0 mx-lg-1"><a
-							class="nav-link py-3 px-0 px-lg-3 rounded" data-bs-toggle="modal"
-							data-bs-target="#modalSignin">로그인/가입</a></li>
+				<ul class="navbar-nav">
+				<%if(t_isLogin){ %> <!-- t_isLogin -->
+						<li class="nav-item mx-0 mx-lg-1">
+						<a class="nav-link py-3 px-0 px-lg-3 rounded" data-bs-toggle="modal"
+							data-bs-target="#modalSignin">마이페이지</a>
+						</li>
+				<%}else{ %>
+						<li class="nav-item mx-0 mx-lg-1">
+						<a class="nav-link py-3 px-0 px-lg-3 rounded" data-bs-toggle="modal"
+							data-bs-target="#modalSignin">로그인/가입</a>
+						</li>
+				<%} %>
+						<li class="nav-item mx-0 mx-lg-1">
+						<a class="nav-link py-3 px-0 px-lg-3 rounded" data-bs-toggle="modal"
+							data-bs-target="#modalCart">장바구니</a>
+						</li>
+						<a class="nav-link py-3 px-0 px-lg-3 rounded" data-bs-toggle="modal"
+							data-bs-target="#">고객센터</a>
+						</li>
 					</ul>
 				</div>
 			</div>
@@ -324,3 +346,23 @@
 			</div>
 		</div>
 	</div>
+	<!-- 장바구니 modal -->
+		<div class="modal modal-signin modal fade " tabindex="-1" role="dialog"
+		id="modalCart" aria-hidden="true" aria-labelledby="modalCart">
+			<div class="modal-dialog" role="document">
+				<div class="modal-content rounded-5 shadow">
+					<div class="modal-header p-5 pb-4 border-bottom-0">
+						<h2 class="fw-bold mb-0">장바구니</h2>
+						<button type="button" class="btn-close" data-bs-dismiss="modal"
+							aria-label="Close"></button>
+					</div>
+					<div class="container px-10 my-10">
+						<form>
+								123
+						</form>
+					</div>
+					
+				</div>
+			</div>
+		</div>
+				
