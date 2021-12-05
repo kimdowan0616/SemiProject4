@@ -50,6 +50,7 @@
 		String content=mr.getParameter("content2");
 		String no=mr.getParameter("no");
 		String oldFileName=mr.getParameter("oldFileName");
+		String pdCode=mr.getParameter("pdCode");
 		
 		//2
 		ContentsDAO dao = new ContentsDAO();	
@@ -62,6 +63,7 @@
 		vo.setFileName(fileName);
 		vo.setOriginalFileName(originalFName);
 		vo.setFileSize(fileSize);
+		vo.setPdCode(Integer.parseInt(pdCode));
 		
 		if(dao.checkPwd(vo)){		
 			int cnt=dao.updateContents(vo);

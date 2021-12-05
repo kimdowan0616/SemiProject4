@@ -66,23 +66,27 @@ oldFileName = "";
 				<fieldset>
 					<legend>글수정</legend>
 					<div class="firstDiv">
-						<label for="title">제목</label> <input type="text" id="title"
-							name="title" value="<%=vo.getTitle()%>" />
+						<label for="title">제목</label>
+						<input type="text" id="title" name="title" value="<%=vo.getTitle()%>" style="width: 400px"/>
 					</div>
 					<div>
-						<label for="name">작성자</label> <input type="text" id="userid"
-							name="userid" value="<%=vo.getUserid()%>" />
+						<label for="name">작성자</label> 
+						<input type="text" id="userid" name="userid" value="<%=vo.getUserid()%>" />
 					</div>
 					<div>
-						<label for="pwd">비밀번호</label> <input type="password" id="pwd"
-							name="pwd" />
+						<label for="pwd">비밀번호</label>
+						<input type="password" id="pwd" name="pwd" />
 					</div>
 					<div>
-						<label for="upfile">첨부파일</label> <input type="file" id="upfile"
-							name="upfile" />
+					<label for="pdCode">상품번호</label>
+					<input type="text" id="pdCode" name="pdCode" />
 					</div>
 					<div>
-						<span class="sp1">첨부파일목록</span>
+						<label for="upfile">파일 업로드 </label>
+						<input type="file" id="upfile" name="upfile" />
+					</div>
+					<div>
+						<span class="sp1">첨부파일 : </span>
 						<%
 						if (vo.getFileName() != null && !vo.getFileName().isEmpty()) {
 						%>
@@ -95,8 +99,8 @@ oldFileName = "";
 					</div>
 
 					<div>
-						<label for="content">내용</label>
-						<textarea id="content" name="content" rows="12" cols="40"><%=content%></textarea>
+						<label for="content"></label>
+						<textarea id="content" name="content" rows="12" cols="50">내용<%=content%></textarea>
 					</div>
 					<div class="center">
 						<input type="submit" value="수정" /> <input type="Button"
@@ -104,8 +108,7 @@ oldFileName = "";
 					</div>
 				</fieldset>
 			</form>
-		</div>
-
+			<br><br><br>
 		</div>
 	</section>
 

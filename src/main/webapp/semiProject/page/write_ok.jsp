@@ -50,6 +50,7 @@
 		String userid=mr.getParameter("userid");
 		String pwd=mr.getParameter("pwd");
 		String content2=mr.getParameter("content2");
+		String pdCode=mr.getParameter("pdCode");
 		
 		//ip 읽어오기
 		String ip=request.getRemoteAddr();
@@ -66,6 +67,7 @@
 		vo.setFileName(fileName);
 		vo.setOriginalFileName(originalFName);
 		vo.setFileSize(fileSize);
+		vo.setPdCode(Integer.parseInt(pdCode));
 		
 		int cnt=dao.insertContents(vo);
 		

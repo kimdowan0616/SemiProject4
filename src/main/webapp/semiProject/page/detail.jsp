@@ -68,8 +68,7 @@
 		style="padding-top: 0px; padding-bottom: 0px">
 	<div class="container">
 		<div class="firstDiv">
-	<h2>글 상세보기</h2>
-			<span class="sp1">제목</span> <span><%=vo.getTitle() %></span>
+			<span class="sp1"></span> <span style="font-size: 2em; font-weight: bold;"><%=vo.getTitle() %></span>
 		</div>
 		<div>
 			<span class="sp1">아이디</span> <span><%=vo.getUserid() %></span>
@@ -81,25 +80,34 @@
 			<span class="sp1">조회수</span> <span><%=vo.getReadcount() %></span>
 		</div>
 		<div>
+			<span class="sp1">사용된 제품의 코드</span> <span><%=vo.getPdCode() %></span>
+		</div>
+		<div>
 			<span class="sp1">첨부파일</span> 
 			<span>
 				<a href="downCount.jsp?no=<%=no%>&fileName=<%=vo.getFileName()%>">
 				<%=fileInfo %></a> 
 				<%=downInfo %></span>
 		</div>		
-		<div class="lastDiv">			
+		<div class="lastDiv">
+		<div>
+		<img src="../uploadFile/<%=vo.getFileName()%>" width="500" onerror="" /><br />
+		</div>	
 			<p class="content"><%=content %></p>
 		</div>
 		<div class="center">
-			<a href='edit.jsp?no=<%=no%>'>수정</a> |
-        	<a href
-='delete.jsp?no=<%=no%>&oldFileName=<%=oldFileName%>'>
-        	삭제</a> |
-        	<a href='list.jsp'>목록</a>			
+			<div class="btn btn-primary">
+				<a href='edit.jsp?no=<%=no%>' style="color: black">수정</a>
+			</div>
+			<div class="btn btn-primary">
+				<a href='delete.jsp?no=<%=no%>&oldFileName=<%=oldFileName%>' style="color: black">삭제</a>
+			</div>
+			<div class="btn btn-primary">
+				<a href='list.jsp' style="color: black">목록</a>
+			</div>
 		</div>
+		<br><br><br><br><br>
 	</div>
-
-		</div>
 	</section>
 
 	<%@ include file="../section/footer.jsp"%>

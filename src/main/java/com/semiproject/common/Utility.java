@@ -52,7 +52,7 @@ public class Utility {
 		//파일이 첨부된 경우 이미지 보여주기
 		String result="";
 		if(fileName!=null && !fileName.isEmpty()){
-			result= "<img src='../images/file.gif'>";
+			result= "<img class='img-fluid' src='../uploadFile/"+fileName+"' width='400'; height='400'><br>";
 		}//if
 		
 		return result;
@@ -63,7 +63,8 @@ public class Utility {
 		if(oFileName!=null && !oFileName.isEmpty()){
 			float fSize = Math.round(fileSize/1000f*10)/10f;
 			
-			result=displayFile(oFileName)+" "+ oFileName+" ("+fSize+"KB) ";
+			/* result=displayFile(oFileName)+" "+ oFileName+" ("+fSize+"KB) "; */
+			result=oFileName+" ("+fSize+"KB) ";
 		}//if
 		return result;
 		

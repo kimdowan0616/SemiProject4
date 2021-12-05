@@ -365,83 +365,23 @@ pageEncoding="UTF-8"%>
 		</div>
 	</section>
 
-	<!-- About Section-->
-	<section class="page-section bg-primary text-white mb-0" id="about">
+	<!-- 컨텐츠 Section-->
+	<section class="page-section bg-primary text-dark mb-0" id="about">
 		<div class="container">
-			<!-- About Section Heading-->
-			<h2
-				class="page-section-heading text-center text-uppercase text-white">컨텐츠</h2>
-			<!-- Icon Divider-->
-			<div class="divider-custom divider-light">
+			<!-- Divider-->
+			<div class="divider-custom">
 				<div class="divider-custom-line"></div>
 				<div class="divider-custom-icon">
-					<i class="fas fa-star"></i>
+			<h2 class="page-section-heading text-center text-uppercase text-dark">컨텐츠</h2>
 				</div>
 				<div class="divider-custom-line"></div>
 			</div>
-
-			<!-- 컨텐츠 영역 -->
-			<div class="row">
-				<div class="col-md-3 col-lg-3 mb-5 mb-md-0">
-					<div class="contentsthumbnail">
-						<img src="../images/instar.png" alt="..."
-							style="width: 242px; height: 200px">
-						<div class="caption">
-							<h3>Thumbnail label</h3>
-							<p>ㅁㄴㅇㅁㄴㅇㅁㄴㅇㄴㅁㅇㅁㄴㅇㄴㅁㅇㄴㅁㅇㄴㅁㅇㅁㄴㅇㅁㄴㅇㅁㄴㅇㅁㄴㅇㅁㄴㅇㅁㄴㅇㄴㅁㅇ</p>
-							<p>
-								<a href="#" class="btn btn-primary" role="button">Button</a> <a
-									href="#" class="btn btn-default" role="button">Button</a>
-							</p>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-3 col-lg-3 mb-5 mb-md-0">
-					<div class="contentsthumbnail">
-						<img src="../images/instar.png" alt=".." style="width: 242px; height: 200px">
-						<div class="caption">
-							<h3>Thumbnail label</h3>
-							<p>...</p>
-							<p>
-								<a href="#" class="btn btn-primary" role="button">Button</a>
-								<a href="#" class="btn btn-default" role="button">Button</a>
-							</p>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-3 col-lg-3 mb-5 mb-md-0">
-					<div class="contentsthumbnail">
-						<img src="../images/instar.png" alt="..."
-							style="width: 242px; height: 200px">
-						<div class="caption">
-							<h3>Thumbnail label</h3>
-							<p>...</p>
-							<p>
-								<a href="#" class="btn btn-primary" role="button">Button</a>
-								<a href="#" class="btn btn-default" role="button">Button</a>
-							</p>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-3 col-lg-3 mb-5 mb-md-0">
-					<div class="contentsthumbnail">
-						<img src="../images/instar.png" alt="..."
-							style="width: 242px; height: 200px">
-						<div class="caption">
-							<h3>Thumbnail label</h3>
-							<p>...</p>
-							<p>
-								<a href="#" class="btn btn-primary" role="button">Button</a>
-								<a href="#" class="btn btn-default" role="button">Button</a>
-							</p>
-						</div>
-					</div>
-				</div>
-			</div>
-
+			<!-- 컨텐츠 게시판 -->
+			<%@ include file="../page/listMain.jsp"%>
+			
 			<!-- 컨텐츠 더보기-->
 			<div class="text-center mt-4">
-				<a class="btn btn-xl btn-outline-light" href="../page/list.jsp"> 컨텐츠 더보기 </a>
+				<a class="btn btn-xl btn-outline-light text-dark" href="../page/list.jsp" style="font-weight: bold;"> 컨텐츠 더보기 </a>
 			</div>
 		</div>
 	</section>

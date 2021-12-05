@@ -75,7 +75,7 @@ public class ContentsVO {
 		return content2;
 	}
 
-	public void setContent2(String content) {
+	public void setContent2(String content2) {
 		this.content2 = content2;
 	}
 

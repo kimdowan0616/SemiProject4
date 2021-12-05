@@ -41,7 +41,7 @@
   --bs-danger: #dc3545;
   --bs-light: #f8f9fa;
   --bs-dark: #212529;
-  --bs-primary-rgb: 26, 188, 156;
+  --bs-primary-rgb: 204, 229, 255;
   --bs-secondary-rgb: 98, 98, 226;
   --bs-success-rgb: 25, 135, 84;
   --bs-info-rgb: 13, 202, 240;
@@ -237,7 +237,7 @@ sup {
 
 a {
   color: #1abc9c;
-  text-decoration: underline;
+  text-decoration: none;
 }
 a:hover {
   color: #15967d;
@@ -2449,11 +2449,12 @@ textarea.form-control-lg {
 }
 
 .form-select-sm {
-  padding-top: 0.25rem;
-  padding-bottom: 0.25rem;
-  padding-left: 0.5rem;
+  padding-top: 0.3rem; /* 변경 */
+  padding-bottom: 0.3rem; /* 변경 */
+  padding-left: 0.3rem;
   font-size: 0.875rem;
   border-radius: 0.25rem;
+  margin-right: 10px; /* 추가 */
 }
 
 .form-select-lg {
@@ -3490,6 +3491,7 @@ textarea.form-control-lg {
 }
 
 .btn-sm, .btn-group-sm > .btn {
+	color: #8080c0;
   padding: 0.25rem 0.5rem;
   font-size: 0.875rem;
   border-radius: 0.25rem;
@@ -11450,7 +11452,6 @@ html {
 
 @media (min-width: 992px) {
   .masthead {
-    padding-top: calc(6rem + 104px);
     padding-bottom: 6rem;
   }
   .masthead .masthead-heading {
@@ -11575,3 +11576,4 @@ html {
 	object-fit: cover;
 	object-position: center;
 }
+

@@ -5,10 +5,12 @@
 <%@page import="java.sql.SQLException"%>
 <%@page import="java.util.List"%>
 <%@page import="java.util.ArrayList"%>
-<%@ include file="../section/top.jsp"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
 <%
+//[1] write.jsp에서 [글목록]클릭하면 get방식으로 이동
+//또는 write_ok.jsp에서 글쓰기 성공하면 get방식으로 이동
+//[2] 검색의 경우 - list.jsp에서 검색버튼 클릭하면 post방식으로 서브밋됨
 
 //1
 request.setCharacterEncoding("utf-8");
@@ -39,6 +41,7 @@ if (request.getParameter("currentPage") != null) {
 	currentPage = Integer.parseInt(request.getParameter("currentPage"));
 }
 
+//현재 페이지와 무관한 변수
 int totalRecord = list.size(); //총 레코드 개수, 17
 int pageSize = 6; //한 페이지에 보여줄 레코드 수
 int totalPage = (int) Math.ceil((float) totalRecord / pageSize); //총 페이지수
@@ -77,33 +80,8 @@ body {
 	<section class="page-section portfolio" id="portfolio"
 		style="padding-top: 0px; padding-bottom: 0px">
 		<div class="container">
-			<%if (keyword != null && !keyword.isEmpty()) {%>
-			<p>
-				검색어 :<%=keyword%>,
-				<%=list.size()%>건 검색되었습니다.
-			</p>
-			<% } %>
-			
-			<div class="container" style="padding-top: 0px; padding-bottom: 10px; float: left;">
-				<h2 style="text-align: center">컨텐츠</h2>
-				<div class="btn btn-primary btn-sm" style="float: right">
-				<a href='write.jsp' style="color: black">글쓰기</a></div>
-				<div style="float: left; width: 80%">
-					<form class="form" method="post" action='list.jsp' border: 10px;">
-						<select class="form-select-sm" style="float: left">
-							<option value="title" <%if ("title".equals(condition)) {%>
-								selected="selected" <%}%>>제목</option>
-							<option value="content" <%if ("content".equals(condition)) {%>
-								selected="selected" <%}%>>내용</option>
-						</select>
-					<input class="form-control me-2" type="text" name="searchKeyword"
-									placeholder="요즘 커뮤니티 트렌드는?" value="<%=keyword%>" style="float: left; width: 30%;">	
-					<button class="btn btn-primary btn-sm" type="submit" style="color: black; float: left;">검색</button>
-					</form>
-				</div>
-			</div>
-			
 			<div class="row justify-content-center">
+				
 					<!--게시판 내용 반복문 시작  -->
 					<%for (int i = 0; i < pageSize; i++) {
 							if (num < 1) break;
@@ -113,6 +91,11 @@ body {
 					%>
 					<div class="col-md-6 col-lg-4 mb-5">
 						<div class="portfolio-item mx-auto" >
+							 <!--<div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+								<div class="portfolio-item-caption-content text-center text-white">
+									<i class="fas fa-plus fa-3x"></i>
+								</div> 
+							</div>-->
 							<a href="countUpdate.jsp?no=<%=vo.getNo()%>" style="font-size: 1.1em; font-weight: bold; color: black"> 
 								<!-- 썸네일 -->
 								<%=Utility.displayFile(vo.getFileName())%>
@@ -125,40 +108,5 @@ body {
 					<!--반복처리 끝  -->
 				
 			</div>
-			<div class="divPage" style="text-align: center;">
-				<!-- 페이지 번호 추가 -->
-				<!-- 이전 블럭으로 이동 -->
-				<% if (firstPage > 1) { %>
-				<a
-					href="list.jsp?currentPage=<%=firstPage - 1%>&searchCondition=<%=condition%>&searchKeyword=<%=keyword%>">
-					<img src="../images/first.JPG" alt="이전블럭">
-				</a>
-				<% } %>
-
-				<!-- [1][2][3][4][5][6][7][8][9][10] -->
-				<% for (int i = firstPage; i <= lastPage; i++) {
-					if (i > totalPage)
-						break;
-					if (i == currentPage) { %>
-				<span style="color: blue; font-weight: bold; font-size: 1.5em">[<%=i%>]</span>
-				<% } else { %>
-				<a href="list.jsp?currentPage=<%=i%>&searchCondition=<%=condition%>&searchKeyword=<%=keyword%>" style="font-weight: bold; font-size: 1.5em">
-					[<%=i%>]
-				</a>
-				<% } //if %>
-				<% } //for %>
-
-				<!-- 다음 블럭으로 이동 -->
-				<% if (lastPage < totalPage) { %>
-				<a
-					href="list.jsp?currentPage=<%=lastPage+1%>&searchCondition=<%=condition%>&searchKeyword=<%=keyword%>">
-					<img src="../images/last.JPG" alt="다음블럭">
-				</a>
-				<% } %>
-				<!--  페이지 번호 끝 -->
-			</div>
-		<br><br><br>
 		</div>
 	</section>
-
-	<%@ include file="../section/footer.jsp"%>
