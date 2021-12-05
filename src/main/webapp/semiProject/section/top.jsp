@@ -34,7 +34,6 @@
 <link href="../css/styles.css" rel="stylesheet" />
 </head>
 <body id="page-top">
-
 	<!-- Navigation-->
 	<nav class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top"
 		id="mainNav">
@@ -46,7 +45,7 @@
 
 			<!-- 모바일버전 우측 메뉴버튼 -->
 			<button
-				class="navbar-toggler text-uppercase font-weight-bold bg-primary text-white rounded"
+				class="navbar-toggler text-uppercase font-weight-bold bg-primary text-dark rounded"
 				type="button" data-bs-toggle="collapse"
 				data-bs-target="#navbarResponsive" aria-controls="navbarResponsive"
 				aria-expanded="false" aria-label="Toggle navigation">

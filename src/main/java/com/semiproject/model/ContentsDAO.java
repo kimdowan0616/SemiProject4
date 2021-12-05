@@ -46,7 +46,7 @@ public class ContentsDAO {
 			ps.setString(6, vo.getFileName());
 			ps.setLong(7, vo.getFileSize());
 			ps.setString(8, vo.getOriginalFileName());
-			ps.setString(9, "21");
+			ps.setInt(9, vo.getPdCode());
 						
 			//4
 			int cnt=ps.executeUpdate();

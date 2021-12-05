@@ -67,27 +67,31 @@
 </head>
 <body class="masthead">
 <section class="page-section" id="contents"
-		style="padding-top: 0px; padding-bottom: 0px">
+		style="padding-top: 0px; padding-bottom: 0px; text-align: center;">
 	<div class="container">
 		<form name="frmWrite" method="post" action="<%=actionVal %>"
 			enctype="multipart/form-data">
 			<fieldset>
 				<legend><%=title %></legend>
 				<div class="firstDiv">
-					<label for="title">제목</label> <input type="text" id="title"
+					<label for="title">제목 :</label> <input type="text" id="title"
 						name="title" class="infobox" value="<%=titleVal %>" />
 				</div>
 				<div>
-					<label for="userid">아이디</label> <input type="text" id="userid"
+					<label for="userid">아이디 : </label> <input type="text" id="userid"
 						name="userid" class="infobox" />
 				</div>
 				<div>
-					<label for="pwd">비밀번호</label> <input type="password" id="pwd"
+					<label for="pwd">비밀번호 </label> <input type="password" id="pwd"
 						name="pwd" class="infobox" />
 				</div>
 				<div>
-					<label for="content2">내용</label>
-					<textarea id="content2" name="content2" rows="12" cols="40"></textarea>
+					<label for="pdCode">상품번호 </label> <input type="text" id="pdCode"
+						name="pdCode" class="infobox" />
+				</div>
+				<div>
+					<label for="content">내용</label>
+					<textarea id="content" name="content2" rows="12" cols="40"></textarea>
 				</div>
 				<div>
 					<label for="upfile">첨부파일</label> <input type="file" id="upfile"
@@ -95,10 +99,12 @@
 				</div>
 				<div class="center">
 					<input type="submit" value="<%=btVal %>"/>
-					<input type="Button" id="btList" value="글목록" onclick="loaction href='list.jsp'"/>
+					<a href="list.jsp">
+					<input type="Button" id="btList" value="글목록"/></a>
 				</div>
 			</fieldset>
 		</form>
+		<br><br><br>
 	</div>
 </section>
 
