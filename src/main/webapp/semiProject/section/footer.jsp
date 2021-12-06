@@ -8,12 +8,12 @@
 				<div class="col-lg-4 mb-5 mb-lg-0">
 					<h4 class="text-uppercase mb-4">Location</h4>
 					<p class="lead mb-0">
-						2215 John Daniel Drive <br /> Clark, MO 65243
+						Republic of Korea <br /> Somewhere in Seoul.
 					</p>
 				</div>
 				<!-- Footer Social Icons-->
 				<div class="col-lg-4 mb-4 mb-lg-0">
-					<h4 class="text-uppercase mb-4">Around the Web</h4>
+					<h4 class="text-uppercase mb-4">Our team's first SemiProject.</h4>
 					<a class="btn btn-outline-light btn-social mx-1" href="#!"><i
 						class="fab fa-fw fa-facebook-f"></i></a> <a
 						class="btn btn-outline-light btn-social mx-1" href="#!"><i
@@ -25,10 +25,9 @@
 				</div>
 				<!-- Footer About Text-->
 				<div class="col-lg-4">
-					<h4 class="text-uppercase mb-4">About Freelancer</h4>
+					<h4 class="text-uppercase mb-4">About Team</h4>
 					<p class="lead mb-0">
-						Freelance is a free to use, MIT licensed Bootstrap theme created
-						by <a href="http://startbootstrap.com">Start Bootstrap</a> .
+						김수민 / 김도완 / 유재문 / 온방현 / 오정훈
 					</p>
 				</div>
 			</div>
@@ -37,7 +36,7 @@
 	<!-- Copyright Section-->
 	<div class="copyright py-4 text-center text-white">
 		<div class="container">
-			<small>Copyright &copy; MyHome Website 2021</small>
+			<small>Copyright &copy; ㈜내집내꾸 Website 2021</small>
 		</div>
 	</div>
 	<!-- Bootstrap core JS-->

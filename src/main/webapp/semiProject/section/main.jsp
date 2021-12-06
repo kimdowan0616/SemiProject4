@@ -3,7 +3,8 @@ pageEncoding="UTF-8"%>
 
 <%@include file="top.jsp"%>
 <article>
-	<header class="masthead bg-primary text-white text-center">
+	<header class="">
+<!-- 	<header class="masthead bg-primary text-white text-center"> -->
 		<!-- 슬라이드 배너 !! -->
 		<div id="carouselExampleDark" class="carousel carousel-dark slide"
 			data-bs-ride="carousel">
@@ -19,27 +20,27 @@ pageEncoding="UTF-8"%>
 			<div class="carousel-inner">
 				<div class="carousel-item active" data-bs-interval="2000"
 					align="center">
-					<img src="../images/1.png" class="d-block w-80" alt="...">
+					<img src="../images/4.png" class="d-block w-95 img-fluid" alt="...">
 					<div class="carousel-caption d-none d-md-block">
-						<h5>First slide label</h5>
+						<!-- <h5>First slide label</h5>
 						<p>Some representative placeholder content for the first
-							slide.</p>
+							slide.</p> -->
 					</div>
 				</div>
 				<div class="carousel-item" data-bs-interval="2000" align="center">
-					<img src="../images/2.png" class="d-block w-80" alt="...">
+					<img src="../images/5.png" class="d-block w-95 img-fluid" alt="...">
 					<div class="carousel-caption d-none d-md-block">
-						<h5>Second slide label</h5>
+						<!-- <h5>Second slide label</h5>
 						<p>Some representative placeholder content for the second
-							slide.</p>
+							slide.</p> -->
 					</div>
 				</div>
 				<div class="carousel-item" data-bs-interval="2000" align="center">
-					<img src="../images/3.png" class="d-block w-80" alt="...">
+					<img src="../images/6.png" class="d-block w-95 img-fluid" alt="...">
 					<div class="carousel-caption d-none d-md-block">
-						<h5>Third slide label</h5>
+						<!-- <h5>Third slide label</h5>
 						<p>Some representative placeholder content for the third
-							slide.</p>
+							slide.</p> -->
 					</div>
 				</div>
 			</div>

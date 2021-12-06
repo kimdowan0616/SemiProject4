@@ -58,12 +58,22 @@
 					id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown"
 					aria-expanded="false"> 카테고리 </a>
 				<ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink"
-					style="left: 25%; width: 300px">
-					<li><a class="dropdown-item" href="#">가구</a></li>
-					<li><a class="dropdown-item" href="#">패브릭</a></li>
-					<li><a class="dropdown-item" href="#">가전</a></li>
-					<li><a class="dropdown-item" href="#">생활용품</a></li>
-					<li><a class="dropdown-item" href="#">반려동물</a></li>
+					style="left: 25%; width: 222px">
+					<li><a class="dropdown-item" href="#">
+					<img src="../images/menu1.png" style="width: 30px; height: 30px">
+					가구</a></li>
+					<li><a class="dropdown-item" href="#">
+					<img src="../images/menu2.png" style="width: 30px; height: 30px">
+					패브릭</a></li>
+					<li><a class="dropdown-item" href="#">
+					<img src="../images/menu3.png" style="width: 30px; height: 30px">
+					가전</a></li>
+					<li><a class="dropdown-item" href="#">
+					<img src="../images/menu4.png" style="width: 30px; height: 30px">
+					생활용품</a></li>
+					<li><a class="dropdown-item" href="#">
+					<img src="../images/menu5.png" style="width: 30px; height: 30px">
+					반려동물</a></li>
 				</ul>
 
 				<!-- 일반메뉴 -->
