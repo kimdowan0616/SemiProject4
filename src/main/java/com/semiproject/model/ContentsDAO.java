@@ -34,19 +34,18 @@ public class ContentsDAO {
 			con=pool.getConnection();
 			
 			//3
-			String sql="insert into contents(no, title, userid, pwd,content2, image, fileName, fileSize, originalFileName,pdCode)\r\n"
-					+ " values(Contents_seq.nextval, ?,?,?,?,?,?,?,?,?)";
+			String sql="insert into contents(no, title, userid, pwd, fileName, fileSize, originalFileName, pdCode, content2)\r\n"
+					+ " values(Contents_seq.nextval, ?,?,?,?,?,?,?,?)";
 			ps=con.prepareStatement(sql);
 			
 			ps.setString(1, vo.getTitle());
 			ps.setString(2, vo.getUserid());
 			ps.setString(3, vo.getPwd());
-			ps.setString(4, vo.getContent2());
-			ps.setString(5, vo.getImage());
-			ps.setString(6, vo.getFileName());
-			ps.setLong(7, vo.getFileSize());
-			ps.setString(8, vo.getOriginalFileName());
-			ps.setInt(9, vo.getPdCode());
+			ps.setString(4, vo.getFileName());
+			ps.setLong(5, vo.getFileSize());
+			ps.setString(6, vo.getOriginalFileName());
+			ps.setInt(7, vo.getPdCode());
+			ps.setString(8, vo.getContent2());
 						
 			//4
 			int cnt=ps.executeUpdate();
@@ -94,7 +93,6 @@ public class ContentsDAO {
 				String userid=rs.getString("userid");
 				String pwd=rs.getString("pwd");
 				String content2=rs.getString("content2");
-				String image=rs.getString("image");
 				String fileName=rs.getString("fileName");
 				String originalFileName=rs.getString("originalFileName");
 				Timestamp regdate=rs.getTimestamp("regdate");
@@ -103,10 +101,8 @@ public class ContentsDAO {
 				long fileSize=rs.getLong("fileSize");
 				int downCnt=rs.getInt("downCnt");
 				
-				ContentsVO vo = new ContentsVO
-						(no, title, userid, pwd, content2, regdate, image, 
-								fileName, fileSize, downCnt, readcount, 
-								originalFileName, pdCode);
+				ContentsVO vo = new ContentsVO(no, title, userid, pwd, regdate, fileName, fileSize, downCnt, 
+						readcount, originalFileName, pdCode, content2);
 						
 				list.add(vo);
 			}
@@ -141,30 +137,27 @@ public class ContentsDAO {
 				String title=rs.getString("title");
 				String userid=rs.getString("userid");
 				String pwd=rs.getString("pwd");
-				String content2=rs.getString("content2");
 				int readcount=rs.getInt("readcount");
 				Timestamp regdate=rs.getTimestamp("regdate");
-				String image=rs.getString("image");
-				//자료실 추가
 				String fileName=rs.getString("fileName");
 				long fileSize=rs.getLong("fileSize");
 				int downCnt=rs.getInt("downCnt");
 				String originalFileName=rs.getString("originalFileName");
 				int pdCode=rs.getInt("pdCode");
+				String content2=rs.getString("content2");
 				
 				vo.setNo(no);
 				vo.setTitle(title);
 				vo.setUserid(userid);
-				vo.setContent2(content2);
 				vo.setPwd(pwd);
 				vo.setRegdate(regdate);
-				vo.setImage(image);
 				vo.setFileName(fileName);
 				vo.setFileSize(fileSize);
 				vo.setDownCnt(downCnt);
 				vo.setReadcount(readcount);
 				vo.setOriginalFileName(originalFileName);
 				vo.setPdCode(pdCode);
+				vo.setContent2(content2);
 			}
 			System.out.println("상세보기 결과 vo="+vo+", 매개변수 no="+no);
 			
@@ -241,6 +234,37 @@ public class ContentsDAO {
 				}
 			}
 			System.out.println("비밀번호 체크 결과 bool="+bool+", 매개변수 vo="+vo);
+			
+			return bool;
+		}finally {
+			pool.dbClose(rs, ps, con);
+		}
+	}
+	
+	public boolean checkProduct(ContentsVO vo) throws SQLException {
+		Connection con=null;
+		PreparedStatement ps=null;
+		ResultSet rs=null;
+		
+		boolean bool=false;
+		try {
+			//1,2
+			con=pool.getConnection();
+			
+			//3.
+			String sql="select pdCode from Contents where pdCode=?";
+			ps=con.prepareStatement(sql);
+			ps.setInt(1, vo.getPdCode());
+			
+			//4
+			rs=ps.executeQuery();
+			if(rs.next()) {
+				int pdCode=rs.getInt(1);
+				if(pdCode==vo.getPdCode()) {
+					bool=true;
+				}
+			}
+			System.out.println("상품 체크 결과 bool="+bool+", 매개변수 vo="+vo);
 			
 			return bool;
 		}finally {

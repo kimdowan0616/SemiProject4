@@ -1,8 +1,8 @@
+<%@page import="com.semiproject.model.ContentsVO"%>
 <%@page import="java.io.File"%>
 <%@page import="com.oreilly.servlet.multipart.DefaultFileRenamePolicy"%>
 <%@page import="com.semiproject.common.Utility"%>
 <%@page import="com.oreilly.servlet.MultipartRequest"%>
-<%@page import="com.semiproject.model.ContentsVO"%>
 <%@page import="java.sql.SQLException"%>
 <%@page import="com.semiproject.model.ContentsDAO"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
@@ -47,15 +47,14 @@
 		String title=mr.getParameter("title");
 		String userid=mr.getParameter("userid");
 		String pwd=mr.getParameter("pwd");
-		String content=mr.getParameter("content2");
 		String no=mr.getParameter("no");
 		String oldFileName=mr.getParameter("oldFileName");
 		String pdCode=mr.getParameter("pdCode");
+		String content=mr.getParameter("content2");
 		
 		//2
 		ContentsDAO dao = new ContentsDAO();	
 		ContentsVO vo = new ContentsVO();
-		vo.setContent2(content);
 		vo.setUserid(userid);
 		vo.setNo(Integer.parseInt(no));
 		vo.setPwd(pwd);
@@ -64,6 +63,7 @@
 		vo.setOriginalFileName(originalFName);
 		vo.setFileSize(fileSize);
 		vo.setPdCode(Integer.parseInt(pdCode));
+		vo.setContent2(content);
 		
 		if(dao.checkPwd(vo)){		
 			int cnt=dao.updateContents(vo);
@@ -85,18 +85,18 @@
 					alert("글 수정되었습니다.");
 					location.href="detail.jsp?no=<%=no%>";
 				</script>	
-		<%	}else{ %>
+		<%	}else if(dao.checkPwd(vo)==false){ %>
 				<script type="text/javascript">
-					alert("글 수정 실패!");
+					alert("상품코드가 존재하지 않습니다.");
 					history.go(-1);				
-				</script>
-		<%	}
-		}else{  //비번 불일치 %>
+				</script>	
+		<%	}else{ %>
 			<script type="text/javascript">
 				alert("비밀번호가 일치하지 않습니다.");
 				history.go(-1);				
 			</script>	
-	<%	}
+	<%		}
+		}
 	}catch(SQLException e){
 		e.printStackTrace();
 	}

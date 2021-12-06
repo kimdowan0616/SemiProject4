@@ -76,9 +76,9 @@ body {
 <body class="masthead">
 	<section class="page-section portfolio" id="portfolio"
 		style="padding-top: 0px; padding-bottom: 0px">
-		<div class="container">
+		<div class="container" style="padding-top: 0px; padding-bottom: 0px">
 			<%if (keyword != null && !keyword.isEmpty()) {%>
-			<p>
+			<p style="font-weight: bold;">
 				검색어 :<%=keyword%>,
 				<%=list.size()%>건 검색되었습니다.
 			</p>
@@ -89,15 +89,15 @@ body {
 				<div class="btn btn-primary btn-sm" style="float: right">
 				<a href='write.jsp' style="color: black">글쓰기</a></div>
 				<div style="float: left; width: 80%">
-					<form class="form" method="post" action='list.jsp' border: 10px;">
-						<select class="form-select-sm" style="float: left">
+					<form class="form" method="post" action='list.jsp' style="border: 10px">
+						<select class="form-select-sm" style="float: left" name="searchCondition">
 							<option value="title" <%if ("title".equals(condition)) {%>
 								selected="selected" <%}%>>제목</option>
-							<option value="content" <%if ("content".equals(condition)) {%>
+							<option value="content2" <%if ("content".equals(condition)) {%>
 								selected="selected" <%}%>>내용</option>
 						</select>
 					<input class="form-control me-2" type="text" name="searchKeyword"
-									placeholder="요즘 커뮤니티 트렌드는?" value="<%=keyword%>" style="float: left; width: 30%;">	
+									placeholder="내방 인테리어의 영감은 컨텐츠에서!" value="<%=keyword%>" style="float: left; width: 30%;">	
 					<button class="btn btn-primary btn-sm" type="submit" style="color: black; float: left;">검색</button>
 					</form>
 				</div>

@@ -5,18 +5,8 @@
 <%@ include file="../section/top.jsp"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
-<!DOCTYPE html>
-<html lang="ko">
-<head>
-<title>컨텐츠게시판 - 수정</title>
-<meta charset="UTF-8">
-<link rel="stylesheet" type="text/css" href="../css/mainstyle.css" />
-<link rel="stylesheet" type="text/css" href="../css/clear.css" />
-<link rel="stylesheet" type="text/css" href="../css/formLayout.css" />
-<link rel="stylesheet" type="text/css" href="../css/mystyle.css" />
 <%
-//detail.jsp에서 [수정]링크 클릭하면 get방식으로 이동
-//1
+
 String no = request.getParameter("no");
 
 if (no == null || no.isEmpty()) {
@@ -32,7 +22,6 @@ return;
 
 //2
 ContentsDAO dao = new ContentsDAO();
-
 ContentsVO vo = null;
 try {
 vo = dao.selectByNo(Integer.parseInt(no));
@@ -49,18 +38,12 @@ if (oldFileName == null)
 oldFileName = "";
 %>
 
-<script type="text/javascript">
-	
-</script>
-
-</head>
 <body class="masthead">
 	<section class="page-section" id="contents"
 		style="padding-top: 0px; padding-bottom: 0px">
 		<div class="container">
 			<form name="frmEdit" method="post" action="edit_ok.jsp"
 				enctype="multipart/form-data">
-				<!-- 수정시 no가 필요하므로 히든 필드에 담아서 넘겨준다 -->
 				<input type="hidden" name="no" value="<%=no%>">
 
 				<fieldset>
@@ -87,20 +70,16 @@ oldFileName = "";
 					</div>
 					<div>
 						<span class="sp1">첨부파일 : </span>
-						<%
-						if (vo.getFileName() != null && !vo.getFileName().isEmpty()) {
-						%>
+						<% if (vo.getFileName() != null && !vo.getFileName().isEmpty()) { %>
 						<span><%=Utility.showFileInfo(vo.getOriginalFileName(), vo.getFileSize())%>
 						</span><br> <span style="color: green; font-weight: bold">
 							첨부파일을 새로 지정할 경우 기존 파일은 삭제됩니다.</span>
-						<%
-						}
-						%>
+						<% } %>
 					</div>
 
 					<div>
-						<label for="content"></label>
-						<textarea id="content" name="content" rows="12" cols="50">내용<%=content%></textarea>
+						<label for="content2"></label>
+						<textarea id="content2" name="content2" rows="12" cols="150"><%=content%></textarea>
 					</div>
 					<div class="center">
 						<input type="submit" value="수정" /> <input type="Button"
