@@ -8,7 +8,7 @@ public class Utility {
 	public static final String UPLOAD_PATH="/semiproject";
 	//테스트 경로
 	public static final String TEST_PATH
-	="E:\\lecture\\java\\workspace_list\\jsp_ws\\SemiProject\\src\\main\\webapp\\semiProject\\uploadFile";
+	="E:\\lecture\\java\\workspace_list\\jsp_ws\\semi\\src\\main\\webapp\\semiProject\\page\\uploadFile";
 	
 	public static String displayRe(int step) {
 		//답변글인 경우 단계별로 이미지 보여주기.
@@ -18,7 +18,7 @@ public class Utility {
 				result+="&nbsp;";
 			}//for
 
-			result+= "<img src='../images/re.gif'>";
+			result+= "<img src='../../images/re.gif'>";
 		}//if
 		
 		return result;
@@ -42,7 +42,7 @@ public class Utility {
 		
 		String result="";
 		if(gap<24) {
-			result="<img src='../images/new.gif' alt='new이미지'>";
+			result="<img src='../../images/new.gif' alt='new이미지'>";
 		}
 		
 		return result;
@@ -53,6 +53,15 @@ public class Utility {
 		String result="";
 		if(fileName!=null && !fileName.isEmpty()){
 			result= "<img class='img-fluid' src='../uploadFile/"+fileName+"' width='400'; height='400'><br>";
+		}//if
+		
+		return result;
+	}
+	public static String displayFile2(String fileName) {
+		//파일이 첨부된 경우 이미지 보여주기
+		String result="";
+		if(fileName!=null && !fileName.isEmpty()){
+			result= "<img class='img-fluid' src='../page/uploadFile/"+fileName+"' width='400'; height='400'><br>";
 		}//if
 		
 		return result;
