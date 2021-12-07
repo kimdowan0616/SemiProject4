@@ -1,4 +1,0 @@
-button#btnID:hover {
-    color: white;
-    background: blue;
-}
