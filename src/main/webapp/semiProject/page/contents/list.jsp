@@ -54,26 +54,8 @@ int curPos = (currentPage - 1) * pageSize;
 //페이지당 글 리스트 시작번호
 int num = totalRecord - curPos; //17, 12, 7, 2
 %>
-<script type="text/javascript">
-	$(function() {
-		$('.divList .box2 tbody tr').hover(function() {
-			$(this).css('background', 'skyblue');
-		}, function() {
-			$(this).css('background', '');
-		});
-	});
-</script>
-<style type="text/css">
-body {
-	padding: 5px;
-	margin: 5px;
-}
-</style>
-<head>
-<meta charset="UTF-8">
-<title>Insert title here</title>
-</head>
-<body class="masthead">
+
+<article class="masthead">
 	<section class="page-section portfolio" id="portfolio"
 		style="padding-top: 0px; padding-bottom: 0px">
 		<div class="container" style="padding-top: 0px; padding-bottom: 0px">
@@ -131,7 +113,7 @@ body {
 				<% if (firstPage > 1) { %>
 				<a
 					href="list.jsp?currentPage=<%=firstPage - 1%>&searchCondition=<%=condition%>&searchKeyword=<%=keyword%>">
-					<img src="../images/first.JPG" alt="이전블럭">
+					<img src="../../images/first.JPG" alt="이전블럭">
 				</a>
 				<% } %>
 
@@ -152,7 +134,7 @@ body {
 				<% if (lastPage < totalPage) { %>
 				<a
 					href="list.jsp?currentPage=<%=lastPage+1%>&searchCondition=<%=condition%>&searchKeyword=<%=keyword%>">
-					<img src="../images/last.JPG" alt="다음블럭">
+					<img src="../../images/last.JPG" alt="다음블럭">
 				</a>
 				<% } %>
 				<!--  페이지 번호 끝 -->
@@ -160,5 +142,5 @@ body {
 		<br><br><br>
 		</div>
 	</section>
-
+</article>
 	<%@ include file="../section/footer.jsp"%>

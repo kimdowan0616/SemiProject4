@@ -20,7 +20,7 @@ pageEncoding="UTF-8"%>
 			<div class="carousel-inner">
 				<div class="carousel-item active" data-bs-interval="2000"
 					align="center">
-					<img src="../images/4.png" class="d-block w-95 img-fluid" alt="...">
+					<img src="../../images/4.png" class="d-block w-95 img-fluid" alt="...">
 					<div class="carousel-caption d-none d-md-block">
 						<!-- <h5>First slide label</h5>
 						<p>Some representative placeholder content for the first
@@ -28,7 +28,7 @@ pageEncoding="UTF-8"%>
 					</div>
 				</div>
 				<div class="carousel-item" data-bs-interval="2000" align="center">
-					<img src="../images/5.png" class="d-block w-95 img-fluid" alt="...">
+					<img src="../../images/5.png" class="d-block w-95 img-fluid" alt="...">
 					<div class="carousel-caption d-none d-md-block">
 						<!-- <h5>Second slide label</h5>
 						<p>Some representative placeholder content for the second
@@ -36,7 +36,7 @@ pageEncoding="UTF-8"%>
 					</div>
 				</div>
 				<div class="carousel-item" data-bs-interval="2000" align="center">
-					<img src="../images/6.png" class="d-block w-95 img-fluid" alt="...">
+					<img src="../../images/6.png" class="d-block w-95 img-fluid" alt="...">
 					<div class="carousel-caption d-none d-md-block">
 						<!-- <h5>Third slide label</h5>
 						<p>Some representative placeholder content for the third
@@ -84,7 +84,7 @@ pageEncoding="UTF-8"%>
 								<i class="fas fa-plus fa-3x"></i>
 							</div>
 						</div>
-						bbb <img class="img-fluid" src="../images/mood1.jpg" alt="..." />ccc
+						bbb <img class="img-fluid" src="../../images/mood1.jpg" alt="..." />ccc
 					</div>
 					1
 				</div>
@@ -98,7 +98,7 @@ pageEncoding="UTF-8"%>
 								<i class="fas fa-plus fa-3x"></i>
 							</div>
 						</div>
-						bbb <img class="img-fluid" src="../images/clean1.jpg" alt="..." />ccc
+						bbb <img class="img-fluid" src="../../images/clean1.jpg" alt="..." />ccc
 					</div>
 					2
 				</div>
@@ -113,7 +113,7 @@ pageEncoding="UTF-8"%>
 							</div>
 						</div>
 						bbb
-						<img class="img-fluid" src="../images/minibed1.jpg" alt="..." />
+						<img class="img-fluid" src="../../images/minibed1.jpg" alt="..." />
 						ccc
 					</div>
 					3
@@ -128,7 +128,7 @@ pageEncoding="UTF-8"%>
 								<i class="fas fa-plus fa-3x"></i>
 							</div>
 						</div>
-						bbb <img class="img-fluid" src="../images/bed1.jpg" alt="..." />ccc
+						bbb <img class="img-fluid" src="../../images/bed1.jpg" alt="..." />ccc
 					</div>
 					4
 				</div>
@@ -145,7 +145,7 @@ pageEncoding="UTF-8"%>
 									<i class="fas fa-plus fa-3x"></i>
 								</div>
 							</div>
-							bbb <img class="img-fluid" src="../images/mood1.jpg" alt="..." />ccc
+							bbb <img class="img-fluid" src="../../images/mood1.jpg" alt="..." />ccc
 						</div>
 						1
 					</div>
@@ -159,7 +159,7 @@ pageEncoding="UTF-8"%>
 									<i class="fas fa-plus fa-3x"></i>
 								</div>
 							</div>
-							bbb <img class="img-fluid" src="../images/clean1.jpg" alt="..." />ccc
+							bbb <img class="img-fluid" src="../../images/clean1.jpg" alt="..." />ccc
 						</div>
 						2
 					</div>
@@ -174,7 +174,7 @@ pageEncoding="UTF-8"%>
 									<i class="fas fa-plus fa-3x"></i>
 								</div>
 							</div>
-							bbb <img class="img-fluid" src="../images/minibed1.jpg" alt="..." />ccc
+							bbb <img class="img-fluid" src="../../images/minibed1.jpg" alt="..." />ccc
 						</div>
 						3
 					</div>
@@ -188,7 +188,7 @@ pageEncoding="UTF-8"%>
 									<i class="fas fa-plus fa-3x"></i>
 								</div>
 							</div>
-							bbb <img class="img-fluid" src="../images/bed1.jpg" alt="..." />ccc
+							bbb <img class="img-fluid" src="../../images/bed1.jpg" alt="..." />ccc
 						</div>
 						4
 					</div>
@@ -378,11 +378,11 @@ pageEncoding="UTF-8"%>
 				<div class="divider-custom-line"></div>
 			</div>
 			<!-- 컨텐츠 게시판 -->
-			<%@ include file="../page/listMain.jsp"%>
+			<%@ include file="../contents/listMain.jsp"%>
 			
 			<!-- 컨텐츠 더보기-->
 			<div class="text-center mt-4">
-				<a class="btn btn-xl btn-outline-light text-dark" href="../page/list.jsp" style="font-weight: bold;"> 컨텐츠 더보기 </a>
+				<a class="btn btn-xl btn-outline-light text-dark" href="<%=request.getContextPath() %>/semiProject/page/contents/list.jsp" style="font-weight: bold;"> 컨텐츠 더보기 </a>
 			</div>
 		</div>
 	</section>
@@ -398,7 +398,7 @@ pageEncoding="UTF-8"%>
 				</div>
 				<div id="slick-slide" class="services-body">
 					<div class="services-col mx-2 my-3">
-						<a href=""> <img src="../assets/img/portfolio/cabin.png"
+						<a href=""> <img src="../../assets/img/portfolio/cabin.png"
 							alt="" class="card-img-top">
 						</a>
 						<div class="card-body">
@@ -408,7 +408,7 @@ pageEncoding="UTF-8"%>
 						</div>
 					</div>
 					<div class="services-col mx-2 my-3">
-						<a href=""> <img src="../assets/img/portfolio/cake.png"
+						<a href=""> <img src="../../assets/img/portfolio/cake.png"
 							alt="" class="card-img-top">
 						</a>
 						<div class="card-body">
@@ -418,7 +418,7 @@ pageEncoding="UTF-8"%>
 						</div>
 					</div>
 					<div class="services-col mx-2 my-3">
-						<a href=""> <img src="../assets/img/portfolio/circus.png"
+						<a href=""> <img src="../../assets/img/portfolio/circus.png"
 							alt="" class="card-img-top">
 						</a>
 						<div class="card-body">
@@ -428,7 +428,7 @@ pageEncoding="UTF-8"%>
 						</div>
 					</div>
 					<div class="services-col mx-2 my-3">
-						<a href="#"> <img src="../assets/img/portfolio/game.png"
+						<a href="#"> <img src="../../assets/img/portfolio/game.png"
 							alt="" class="card-img-top">
 						</a>
 						<div class="card-body">
@@ -438,7 +438,7 @@ pageEncoding="UTF-8"%>
 						</div>
 					</div>
 					<div class="services-col mx-2 my-3">
-						<a href=""> <img src="../assets/img/portfolio/submarine.png"
+						<a href=""> <img src="../../assets/img/portfolio/submarine.png"
 							alt="" class="card-img-top">
 						</a>
 						<div class="card-body">
