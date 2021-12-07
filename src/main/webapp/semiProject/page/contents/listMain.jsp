@@ -91,7 +91,7 @@ body {
 					%>
 					<div class="col-md-6 col-lg-4 mb-5">
 						<div class="portfolio-item mx-auto" >
-							<a href="<%=request.getContextPath() %>/semiProject/page/countUpdate.jsp?no=<%=vo.getNo()%>"
+							<a href="<%=request.getContextPath() %>/semiProject/page/contents/countUpdate.jsp?no=<%=vo.getNo()%>"
 								style="font-size: 1.1em; font-weight: bold; color: black"> 
 								<!-- 썸네일 -->
 								<%=Utility.displayFile(vo.getFileName())%>

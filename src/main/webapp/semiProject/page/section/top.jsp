@@ -31,7 +31,7 @@
 	href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic"
 	rel="stylesheet" type="text/css" />
 <!-- Core theme CSS (includes Bootstrap)-->
-<link href="../css/styles.css" rel="stylesheet" />
+<link href="../../css/styles.css" rel="stylesheet" />
 </head>
 <body id="page-top">
 	<!-- Navigation-->
@@ -39,9 +39,9 @@
 		id="mainNav">
 		<div class="container">
 			<!-- 로고 -->
-			<img src="../images/kakao.png" width="50" height="50"
+			<img src="../../images/kakao.png" width="50" height="50"
 				style="margin-right: 20px" alt='로고'> <a class="navbar-brand"
-				href="../section/main.jsp">내집내꾸</a>
+				href="<%=request.getContextPath() %>/semiProject/section/main.jsp">내집내꾸</a>
 
 			<!-- 모바일버전 우측 메뉴버튼 -->
 			<button
@@ -113,6 +113,7 @@
 						<a class="nav-link py-3 px-0 px-lg-3 rounded" data-bs-toggle="modal"
 							data-bs-target="#modalCart">장바구니</a>
 						</li>
+						<li>
 						<a class="nav-link py-3 px-0 px-lg-3 rounded" data-bs-toggle="modal"
 							data-bs-target="#">고객센터</a>
 						</li>
