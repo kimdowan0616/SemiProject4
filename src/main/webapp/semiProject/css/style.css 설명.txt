@@ -1,0 +1,74 @@
+style.css 설명?
+
+●
+text-primary : 상단바의 초록색
+text-secondary : 파란색
+text-success : 진한 초록색
+=> style.css에서 crtl+f로 하나씩 찾아서 적용해보고 눈으로 확인하면 바로 이해 가능
+
+●
+col-md-@{
+  flex: 0 0 auto;
+  width: @x8.333%;
+}
+=> @ 숫자1당 8.3333%	ex)col-md-2 => 16.666667%, col-md-4 => 33.333333%
+=> flex: 0 0 auto => flex: flex-grow, flex-shrink, flex-basis 순서
+	flex-basis : flex박스 내 요소들의 크기, auto이니 알아서 요소 크기를 분배해줌
+	flex-grow : 양수로 지정하면 요소의 크기가 flex-basis이상으로 늘어날 수 있음, 우린 0이니 신경x
+	flex-shrink : 양수로 지정하면 flex박스 공간이 부족하면 요소의 크기를 줄임, 우린 0이니 신경x
+
+	flex: 0 0 auto => 요소들의 크기를 알아서 분배해줌. 앞은 0이니 신경x
+	자세한설명 : https://developer.mozilla.org/ko/docs/Web/CSS/CSS_Flexible_Box_Layout/Basic_Concepts_of_Flexbox
+
+●
+col-lg-@{
+  flex: 0 0 auto;
+  width: @x8.333%;
+}
+=> 위와 동일
+
+●
+mb-@{
+  margin-bottom: #rem !important;
+}
+=> Margin Bottom : #rem단위로 margin
+=> !important : 나중에 설정한 값을 적용되지 않게함. !important 충돌 시 뒤에 있는 !important가 이김
+
+●
+.portfolio .portfolio-item .portfolio-item-caption {
+  position: absolute;	=> 아래의 top, left 사용 시 같이 사용
+  top: 0;	=> 상단기준 얼마나 밑에 위치시킬건지 지정. 양수면 상단기준 아래로, 음수면 위로
+  left: 0;	=> 좌측기준 얼마나 밑에 위치시킬건지 지정. 
+  transition: all 0.2s ease-in-out;	=> 애니메이션 속성, 모두에게 0.2s로 느린시작 느린끝
+  opacity: 0;
+  background-color: rgba(26, 188, 156, 0.9);	=> 마우스 오버 시 나오는 색
+}
+
+●
+align-items-@{
+  @에 맞춰서 세로축을 기준으로 정렬
+	flex-start		컨테이너의 최상단으로 정렬 합니다.
+	flex-end		컨테이너의 최하단으로 정렬합니다.
+	center		컨테이너의 세로 축의 중앙으로 정렬 합니다.
+	baseline		컨테이너의 시작위치에 정렬 합니다.
+	stretch(default)	컨테이너의 맞게 늘립니다.
+}
+
+●
+justify-content-@{
+  @에 맞춰서 가로축을 기준으로 좌우에 대한 정렬
+	flex-start (default)	요소들을 컨테이너의 왼쪽으로 정렬
+	flex-end		요소들을 컨테이너의 우측으로 정렬
+	center		요소들을 컨테이너의 중앙으로 정렬
+	space-between	요소들 사이에 동일한 간격을 둡니다.
+	space-around	요소들 주위에 동일한 간격을 둡니다.
+	space-evenly(FireFox Only)	첫번째로 오는 정렬 대상 전에 두개 의 인접한 정렬 대상 사이의 간격과
+						마지막 정렬 대상 이후의 간격이 같도록 항목이 분산 됩니다.
+}
+
+●
+h-@, w-@{
+  @에 맞춰서 height, width % 설정
+}
+
+
