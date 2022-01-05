@@ -5,7 +5,7 @@ pageEncoding="UTF-8"%>
 <article>
 	<header class="">
 <!-- 	<header class="masthead bg-primary text-white text-center"> -->
-		<!-- 슬라이드 배너 !! -->
+		<!-- 슬라이드 배너 !!x -->
 		<div id="carouselExampleDark" class="carousel carousel-dark slide"
 			data-bs-ride="carousel">
 			<div class="carousel-indicators">
